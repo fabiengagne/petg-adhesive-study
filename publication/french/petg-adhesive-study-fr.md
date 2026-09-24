@@ -1,11 +1,11 @@
-# Essai comparatif d’adhésifs pour PETG
+# Essai comparatif d’adhésifs pour polyéthylène téréphtalate modifié au glycol (PETG)
 
 **Jacques Girard¹, Fabien Gagné¹**  
 ¹ Mostly Intentional Design Labs, Montréal, QC, Canada
 
 ## Résumé
 
-Cette étude comparative évalue la performance de six adhésifs pour l’assemblage de pièces imprimées en PETG destinées à une application marine, soit les boîtiers des bouées autonomes du projet Amavia. Les adhésifs examinés sont un époxy JB Weld, un époxy à prise rapide de 5 minutes, un adhésif polyuréthane Gorilla, un adhésif à bois Titebond III, ainsi que deux cyanoacrylates de viscosités différente, régulier et épais. Deux éprouvettes par adhésif ont été soumises à un chargement en torsion reproduisant le type de sollicitation attendu sur le col fileté du compartiment batterie. Le couple maximal ainsi que le mode de rupture ont été consignés. Les adhésifs polyuréthane et Titebond III ont présenté les résistances les plus faibles, avec rupture principalement dans l’adhésif. Les époxys ont offert de meilleures performances, mais avec une variabilité notable entre les éprouvettes. Les cyanoacrylates ont fourni les meilleurs résultats : aucun des quatre essais n’a entraîné de rupture du joint. Les résistances observées sont donc rapportées comme des bornes inférieures (> 20,4 N·m), la déformation ou la rupture du PETG et du montage d’essai devenant alors le facteur limitant. Le cyanoacrylate épais a été retenu pour l’application finale en raison de sa résistance mécanique, de son temps de travail supérieur à celui du CA liquide et de sa viscosité mieux adaptée à l’obtention d’un joint continu. Un essai d’étanchéité en immersion est prévu afin de compléter la validation pour l’usage réel.
+Cette étude comparative évalue la performance de six adhésifs pour l’assemblage de pièces imprimées en PETG destinées à une application marine, soit les boîtiers des bouées autonomes du projet Amavia. Les adhésifs examinés sont un époxy JB Weld, un époxy à prise rapide de 5 minutes, un adhésif polyuréthane Gorilla, un adhésif à bois Titebond III, ainsi que deux cyanoacrylates (CA) de viscosités différentes, régulier et épais. Deux éprouvettes par adhésif ont été soumises à un chargement en torsion reproduisant le type de sollicitation attendu sur le col fileté du compartiment batterie. Le couple maximal ainsi que le mode de rupture ont été consignés. Les adhésifs polyuréthane et Titebond III ont présenté les résistances les plus faibles, avec rupture principalement dans l’adhésif. Les époxys ont offert de meilleures performances, mais avec une variabilité notable entre les éprouvettes. Les cyanoacrylates ont fourni les meilleurs résultats : aucun des quatre essais n’a entraîné de rupture du joint. Les résistances observées sont donc rapportées comme des bornes inférieures (> 20,4 N·m), la déformation ou la rupture du PETG et du montage d’essai devenant alors le facteur limitant. Le cyanoacrylate épais a été retenu pour l’application finale en raison de sa résistance mécanique, de son temps de travail supérieur à celui du CA liquide et de sa viscosité mieux adaptée à l’obtention d’un joint continu. Un essai d’étanchéité en immersion est prévu afin de compléter la validation pour l’usage réel.
 
 **Mots-clés :** PETG, adhésif, collage, cyanoacrylate, époxy, torsion, impression 3D, étanchéité, Amavia.
 
@@ -231,7 +231,7 @@ Les essais établissent ainsi que, pour la géométrie, le PETG, la préparation
 
 Le passage d’une rupture de l’adhésif à une déformation, une délamination ou une rupture du PETG est particulièrement significatif. Dans la littérature sur les assemblages de pièces imprimées, une rupture de l’adhérent peut survenir lorsque la résistance de l’interface de collage excède la résistance inter-couches de la pièce imprimée [[4]](#ref-4). Cette interprétation est compatible avec les observations faites ici pour les CA et, sur un des essais, pour le System Three Quick Cure 5.
 
-Ce comportement est aussi cohérent avec la nature anisotrope des pièces FDM. Les études consacrées au PETG montrent que la microstructure produite par dépôt couche par couche, l’orientation des filaments et la qualité des interfaces inter-couches modifient la réponse mécanique et peuvent favoriser la délamination [[1](#ref-1)–[3](#ref-3)]. Ainsi, lorsqu’une éprouvette se déforme ou se délamine avant le joint, l’essai ne caractérise plus seulement l’adhésif : il devient aussi un essai de la pièce imprimée et de la géométrie de serrage.
+Ce comportement est aussi cohérent avec la nature anisotrope des pièces fabriquées par dépôt de matière fondue (*Fused Deposition Modeling*, FDM). Les études consacrées au PETG montrent que la microstructure produite par dépôt couche par couche, l’orientation des filaments et la qualité des interfaces inter-couches modifient la réponse mécanique et peuvent favoriser la délamination [[1](#ref-1)–[3](#ref-3)]. Ainsi, lorsqu’une éprouvette se déforme ou se délamine avant le joint, l’essai ne caractérise plus seulement l’adhésif : il devient aussi un essai de la pièce imprimée et de la géométrie de serrage.
 
 ## Mise en perspective avec la littérature
 
@@ -262,7 +262,7 @@ Cette variabilité communautaire justifie l’approche adoptée ici : tester les
 Plusieurs limites doivent être conservées à l’esprit :
 
 - seulement **deux éprouvettes par adhésif** ont été testées ;
-- le protocole n’est pas un essai normalisé de type ASTM D3163 ;
+- le protocole n’est pas un essai normalisé de type *American Society for Testing and Materials* (ASTM) D3163 ;
 - la géométrie et le mode de chargement sont volontairement spécifiques à l’application Amavia ;
 - les quatre essais CA sont **censurés par la limite du PETG ou du montage**, et non par rupture du joint ;
 - aucune incertitude instrumentale formelle ni dispersion statistique robuste n’a été calculée ;
