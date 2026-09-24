@@ -246,7 +246,7 @@ Planned supplementary material includes the specimen STL files, dimensioned draw
 ## Author Contributions
 
 **Fabien Gagné:** Conceptualization, methodology, investigation, data curation, formal analysis, visualization, writing (original draft), project administration.  
-**Jacques Girard:** Methodology, investigation, validation, resources, review and editing.
+**Jacques Girard:** Conceptualization, methodology, investigation, validation, resources, review and editing.
 
 <!-- TODO: Confirm CRediT roles with both authors before submission. ASTM ScholarOne requires contributor-role selection. -->
 
