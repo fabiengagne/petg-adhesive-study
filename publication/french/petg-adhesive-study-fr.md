@@ -65,7 +65,7 @@ Les sièges sociaux des fabricants identifiés ont été vérifiés à partir de
 
 ## Matériau imprimé
 
-Les éprouvettes et les pièces d’application ont été fabriquées en **OVERTURE PETG Rock White, diamètre 1,75 mm**.
+Les éprouvettes et les pièces d’application ont été fabriquées en **OVERTURE PETG Rock White, diamètre 1,75 mm**, commercialisé par **Overture 3D Technologies, LLC** (10777 Westheimer Rd, Suite 159, Houston, Texas 77042, États-Unis).
 
 ## Éprouvettes
 
