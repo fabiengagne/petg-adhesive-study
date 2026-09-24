@@ -249,6 +249,12 @@ Le CA régulier polymérise très rapidement et sa faible viscosité complique l
 
 L’hypothèse formulée pendant l’essai selon laquelle le CA pourrait pénétrer davantage dans la texture superficielle du PETG reste plausible, mais **n’est pas démontrée** par les mesures présentes. La littérature consultée permet d’affirmer que la préparation de surface et la structure imprimée peuvent influencer la performance d’un joint [[1](#ref-1), [2](#ref-2), [4](#ref-4)], mais elle ne permet pas d’attribuer ici la bonne performance du CA à un mécanisme microscopique particulier.
 
+## Retour communautaire complémentaire
+
+À titre de contexte non scientifique, une discussion substantielle de la communauté r/3Dprinting consacrée spécifiquement au collage du PETG rassemble de nombreux retours d’expérience sur différents adhésifs et méthodes de préparation [[6]](#ref-6). Plusieurs participants y rapportent de bons résultats avec des époxys destinés aux plastiques, notamment des produits J-B Weld, tandis que d’autres mentionnent le cyanoacrylate, E6000 ou des adhésifs de soudage chimique pour thermoplastiques. La préparation de surface, en particulier l’élimination de la peinture et le ponçage des faces à assembler, y est également soulignée de façon récurrente.
+
+Cette source est utilisée uniquement comme **contexte communautaire** et non comme preuve expérimentale contrôlée. Elle illustre surtout la diversité des pratiques et l’absence d’un consensus simple applicable à toutes les géométries, formulations de PETG et conditions de chargement.
+
 ## Limites de l’étude
 
 Plusieurs limites doivent être conservées à l’esprit :
@@ -357,4 +363,6 @@ La validation n’est pas complète tant que la tenue à l’immersion, au vieil
 <a id="ref-4"></a>**[4]** Öz, Ö. & Öztürk, F. H. (2025). “The effect of adhesive and adherend compliance on the failure of 3D-printed parts.” *Welding in the World*, 69, 2869–2883. https://doi.org/10.1007/s40194-025-02048-9
 
 <a id="ref-5"></a>**[5]** Yap, Y. L., Toh, W., Koneru, R., Lin, R., Chan, K. I., Guang, H., Chan, W. Y. B., Teong, S. S., Zheng, G. & Ng, T. Y. (2020). “Evaluation of structural epoxy and cyanoacrylate adhesives on jointed 3D printed polymeric materials.” *International Journal of Adhesion and Adhesives*, 100, 102602. https://doi.org/10.1016/j.ijadhadh.2020.102602
+
+<a id="ref-6"></a>**[6]** Reddit, r/3Dprinting (2024). “What glue/adhesives do you use for PETG? I tried super glue, gorilla glue, scigrip weld on glue but nothing seems to hold...” Discussion communautaire portant sur les adhésifs pour PETG, la préparation de surface et les retours d’expérience avec différents produits. https://www.reddit.com/r/3Dprinting/comments/1c3fd63/what_glueadhesives_do_you_use_for_petg_i_tried/
 
