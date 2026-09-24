@@ -40,7 +40,7 @@
  </g>
  <g font-family="Arial,Helvetica,sans-serif" fill="#000">
   <text x="900" y="68" text-anchor="middle" font-size="23">Vue de la face collée</text>
-  <text x="900" y="96" text-anchor="middle" font-size="20">⌀25,0 mm</text>
+  <text x="900" y="96" text-anchor="middle" font-size="20">Ø25,0 mm</text>
  </g>
  <!-- Hex end view, point-up; 21 mm across vertical flats shown horizontally -->
  <g fill="none" stroke="#000">
