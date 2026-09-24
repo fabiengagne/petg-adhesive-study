@@ -63,6 +63,10 @@ Les sièges sociaux des fabricants identifiés ont été vérifiés à partir de
 
 # Protocole d'essai
 
+## Matériau imprimé
+
+Les éprouvettes et les pièces d’application ont été fabriquées en **OVERTURE PETG Rock White, diamètre 1,75 mm**.
+
 ## Éprouvettes
 
 Deux éprouvettes PETG sont préparées pour chaque adhésif.
