@@ -1,6 +1,6 @@
 # Essai comparatif d’adhésifs pour polyéthylène téréphtalate modifié au glycol (PETG)
 
-**Jacques Girard¹, Fabien Gagné¹**  
+**Fabien Gagné¹, Jacques Girard¹**  
 ¹ Mostly Intentional Design Labs, Montréal, QC, Canada
 
 ## Résumé
