@@ -19,8 +19,6 @@ Le comportement d’un joint ne dépend par ailleurs pas uniquement de la résis
 
 Les données publiées comparant directement cyanoacrylates et époxys sur **PETG imprimé** demeurent limitées. Sur d’autres polymères imprimés, Yap *et al.* ont toutefois mesuré des résistances de joint plus élevées avec un cyanoacrylate qu’avec un époxy pour les matériaux ASA et Nylon 12 chargé de fibres de carbone [[5]](#ref-5). Cette observation ne peut pas être transposée quantitativement au PETG, mais elle montre que la supériorité d’un époxy ne peut pas être présumée pour une pièce imprimée.
 
-Les retours de la communauté d’impression 3D sont eux-mêmes contradictoires : certains utilisateurs rapportent des assemblages PETG au cyanoacrylate assez résistants pour entraîner la rupture de la pièce, tandis que d’autres préfèrent l’époxy et signalent une faible tenue de certains cyanoacrylates [[6](#ref-6), [7](#ref-7)]. Ces divergences renforcent l’intérêt d’un essai comparatif réalisé avec les **adhésifs réellement disponibles**, le PETG réellement utilisé et un chargement représentatif de l’application Amavia.
-
 Le présent travail constitue donc un essai comparatif d’ingénierie appliquée, et non une caractérisation normalisée de propriétés adhésives. Son objectif est d’identifier un système de collage approprié au col fileté du compartiment batterie d’une bouée Amavia, soumis à des sollicitations répétées en torsion et devant ultérieurement assurer une fonction d’étanchéité.
 
 ---
@@ -251,12 +249,6 @@ Le CA régulier polymérise très rapidement et sa faible viscosité complique l
 
 L’hypothèse formulée pendant l’essai selon laquelle le CA pourrait pénétrer davantage dans la texture superficielle du PETG reste plausible, mais **n’est pas démontrée** par les mesures présentes. La littérature consultée permet d’affirmer que la préparation de surface et la structure imprimée peuvent influencer la performance d’un joint [[1](#ref-1), [2](#ref-2), [4](#ref-4)], mais elle ne permet pas d’attribuer ici la bonne performance du CA à un mécanisme microscopique particulier.
 
-## Retours de la communauté
-
-Les échanges de la communauté d’impression 3D ne donnent pas de consensus clair. Des utilisateurs rapportent des joints CA sur PETG qui résistent jusqu’à la rupture de la pièce, en particulier avec un CA de bonne qualité et une préparation de surface adéquate [[6]](#ref-6). D’autres signalent au contraire des résultats médiocres au CA et préfèrent des époxys bicomposants [[7]](#ref-7). Ces témoignages ne constituent pas des données scientifiques contrôlées, mais ils illustrent la sensibilité du résultat au produit exact, à la préparation de surface, au vieillissement, à la géométrie et au mode de chargement.
-
-Cette variabilité communautaire justifie l’approche adoptée ici : tester les produits réellement accessibles dans l’environnement du projet plutôt que se fier uniquement à une recommandation générique par famille chimique.
-
 ## Limites de l’étude
 
 Plusieurs limites doivent être conservées à l’esprit :
@@ -366,8 +358,3 @@ La validation n’est pas complète tant que la tenue à l’immersion, au vieil
 
 <a id="ref-5"></a>**[5]** Yap, Y. L., Toh, W., Koneru, R., Lin, R., Chan, K. I., Guang, H., Chan, W. Y. B., Teong, S. S., Zheng, G. & Ng, T. Y. (2020). “Evaluation of structural epoxy and cyanoacrylate adhesives on jointed 3D printed polymeric materials.” *International Journal of Adhesion and Adhesives*, 100, 102602. https://doi.org/10.1016/j.ijadhadh.2020.102602
 
-<a id="ref-6"></a>**[6]** Reddit, r/3Dprinting (2025). “How to properly glue two PETG parts together?” Discussion communautaire ; certains participants rapportent de bons résultats avec des cyanoacrylates de qualité et différentes viscosités. https://www.reddit.com/r/3Dprinting/comments/1ngjhb9/
-
-<a id="ref-7"></a>**[7]** Reddit, r/3Dprinting (2026). “PLA TO PETG Superglue.” Discussion communautaire illustrant des retours opposés, certains utilisateurs préférant un époxy bicomposant au cyanoacrylate pour PETG. https://www.reddit.com/r/3Dprinting/comments/1qva5qo/
-
-> **Note sur les références communautaires :** les sources [[6]](#ref-6) et [[7]](#ref-7) sont incluses uniquement comme contexte d’usage et ne constituent pas des preuves expérimentales contrôlées.
