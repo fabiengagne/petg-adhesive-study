@@ -85,11 +85,13 @@ Titebond III was intentionally included as an exploratory control outside its pr
 
 Two specimens were prepared for each adhesive, for a total of 12 specimens. The specimen geometry was designed to transmit torsional load through the bonded interface while permitting mechanical engagement with the test fixture.
 
-Early specimens used a square drive feature. Later specimens used a hexagonal drive feature that could be engaged directly by a socket. This fixture change is a limitation of the present preliminary series and will be eliminated in future testing.
+The supplied stereolithography (STL) model was measured directly. The specimen has an overall height of **13.0 mm** and a maximum diameter of **25.0 mm**. The bonding interface is the circular first-layer face printed directly on the build plate, with a nominal diameter of **25.0 mm** and a nominal planar area of **490.9 mm²**. The opposite end incorporates a hexagonal drive feature measuring **21.0 mm across flats**. The cylindrical bonding region transitions into the hexagonal drive region above the bonded face.
 
-<!-- TODO: Insert dimensioned drawing and identify all critical dimensions. -->
-<!-- TODO: Record bonded diameter, bonded area, bond-line geometry, wall thickness, drive dimensions, overall specimen dimensions, and orientation of the layer lines relative to the bonded interface. -->
-<!-- TODO: Add STL files as supplementary material and cite them here once committed. -->
+Early specimens used a square drive feature. Later specimens used the 21.0-mm-across-flats hexagonal drive feature represented by the supplied STL and could be engaged directly by a socket. This fixture change is a limitation of the present preliminary series and will be eliminated in future testing.
+
+<!-- TODO: Insert a dimensioned drawing derived from the STL and identify any additional critical dimensions needed for reproduction. -->
+<!-- TODO: Confirm the exact bond-line thickness, if it can be reconstructed from the assembled specimens or preparation records. -->
+<!-- TODO: Add the original STL file to the repository supplementary material and cite its repository path here. -->
 
 ### 2.6 Surface Preparation and Bonding Procedure
 
@@ -241,7 +243,7 @@ The working manuscript and project files are maintained in the public repository
 
 https://github.com/fabiengagne/petg-adhesive-study
 
-Planned supplementary material includes the specimen STL files, dimensioned drawings, test photographs, adhesive packaging photographs, and additional experimental data.
+Planned supplementary material includes the original specimen STL file, a dimensioned drawing derived from that geometry, test photographs, adhesive packaging photographs, and additional experimental data. The supplied STL geometry has already been used to determine the dimensions reported in Section 2.5.
 
 ## Author Contributions
 
