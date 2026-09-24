@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This internal test was performed to check the indication of the digital torque wrench used for the PETG adhesive torsion tests against torques generated from known masses applied at measured lever-arm distances. The verification was intended as an in-house functional check only. It was not a traceable calibration.
+This internal test was performed to check the indication of the digital torque wrench used for the PETG adhesive torsion tests against torques generated from known masses applied at measured lever-arm distances. The verification was intended as an in-house functional check only. It was not a traceable calibration. The reference masses used for the verification were weighed to **±1 g** before use.
 
 ## Instrument
 
@@ -15,7 +15,7 @@ This internal test was performed to check the indication of the digital torque w
 
 ## Test principle
 
-A known mass was used to generate a force under gravity. The force was applied at a measured perpendicular distance from the torque axis. The reference torque was calculated as (T = F r = m g r), using (g = 9.81 mathrm{m/s^2}).
+A known mass, measured to **±1 g**, was used to generate a force under gravity. The force was applied at a measured perpendicular distance from the torque axis. The reference torque was calculated as (T = F r = m g r), using (g = 9.81 mathrm{m/s^2}).
 
 For each test point, the load was applied continuously for **at least 4 s** before the instrument reading was recorded.
 
@@ -51,7 +51,7 @@ The readable test points indicate that the wrench response was of the correct or
 No conclusion about compliance with the seller-stated ±1 % accuracy specification should be drawn from these preliminary values because:
 
 1. some handwritten readings still require confirmation;
-2. uncertainty in the masses and lever-arm measurements has not been quantified;
+2. the reference masses were weighed to ±1 g, but the lever-arm measurement uncertainty has not yet been quantified;
 3. the exact force application geometry and alignment have not yet been documented;
 4. the procedure was an internal functional verification and not a traceable calibration.
 
@@ -59,7 +59,7 @@ A final error table and percentage deviation should be calculated only after all
 
 ## Records
 
-- Original handwritten test notes: `handwritten-notes.svg`
+- Original handwritten test notes: `handwritten-notes.jpg`
 - Instrument used: SOARFLY YX01-24
 - Display resolution: 0.1 N·m
 - Minimum torque application duration per test point: 4 s
@@ -70,6 +70,6 @@ A final error table and percentage deviation should be calculated only after all
 - [ ] Confirm the third 2.0 kg test lever arm and instrument reading.
 - [ ] Confirm the second lever arm used with the 4.2 kg mass.
 - [ ] Record the method used to measure the lever arm and its measurement resolution.
-- [ ] Record the identification and accuracy of the reference masses, if known.
+- [x] Reference masses were weighed to ±1 g.
 - [ ] Record whether torque was applied in the clockwise or counterclockwise direction.
 - [ ] Add the test date if it can be reconstructed.
