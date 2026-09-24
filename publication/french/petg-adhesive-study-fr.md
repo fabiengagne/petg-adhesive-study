@@ -71,6 +71,7 @@ Les éprouvettes et les pièces d’application ont été fabriquées en **OVERT
 
 Les éprouvettes ont été imprimées sur une **Original Prusa i3 MK3** en utilisant le profil Prusa par défaut pour filament PETG, avec les paramètres suivants :
 
+- diamètre de la buse : **0,4 mm** ;
 - température de la buse : **250 °C** ;
 - température du plateau : **80 °C** ;
 - plateau : **surface PEI originale Prusa** ;
