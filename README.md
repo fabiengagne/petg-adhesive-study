@@ -11,7 +11,7 @@ Experimental comparison of adhesives for bonding FDM-printed PETG parts, with an
 
 ## Current status
 
-The French publication is the current working version. An English version and additional experimental photographs will be added later.
+The French publication is the current working version. An English version and additional experimental photographs will be added later. The manuscript of the English version is hosted on a private Google Drive and can't be shared at this time.
 
 ## Authors
 
