@@ -13,13 +13,13 @@ Cette étude comparative évalue la performance de six adhésifs pour l’assemb
 
 ## Introduction
 
-L’assemblage par adhésif de pièces issues de fabrication additive constitue un problème distinct de celui des polymères moulés, car la structure couche par couche introduit une anisotropie (propriété qui dépend de la direction dans laquelle on la mesure), une porosité interne et des interfaces inter-couches susceptibles de devenir les éléments limitants du joint. Des travaux consacrés au PETG imprimé par extrusion montrent notamment que les paramètres de fabrication — orientation du raster, largeur d’extrusion, hauteur de couche et qualité des liaisons inter-couches — influencent fortement la rigidité, la résistance et les modes de rupture des pièces [[[1]](#ref-1)(#ref-1)–[[3]](#ref-3)(#ref-3)].
+L’assemblage par adhésif de pièces issues de fabrication additive constitue un problème distinct de celui des polymères moulés, car la structure couche par couche introduit une anisotropie (propriété qui dépend de la direction dans laquelle on la mesure), une porosité interne et des interfaces inter-couches susceptibles de devenir les éléments limitants du joint. Des travaux consacrés au PETG imprimé par extrusion montrent notamment que les paramètres de fabrication — orientation du raster, largeur d’extrusion, hauteur de couche et qualité des liaisons inter-couches — influencent fortement la rigidité, la résistance et les modes de rupture des pièces [[1](#ref-1)–[3](#ref-3)].
 
-Le comportement d’un joint ne dépend par ailleurs pas uniquement de la résistance nominale de l’adhésif. La compatibilité adhésif–substrat, la rigidité relative des deux matériaux, l’épaisseur de la ligne de collage, la géométrie du joint et la préparation de surface peuvent modifier à la fois la charge ultime et le mode de rupture. Une étude récente comparant plusieurs familles d’adhésifs sur des thermoplastiques imprimés, dont le PETG, conclut que le **type d’adhésif** est le facteur dominant de la résistance du joint parmi les variables étudiées [[4]](#ref-4). D’autres travaux spécifiques aux assemblages PETG imprimés confirment que les paramètres d’impression et l’épaisseur de l’adhésif influencent significativement la résistance et le comportement de rupture des joints [[[1]](#ref-1)(#ref-1), [[2]](#ref-2)(#ref-2)].
+Le comportement d’un joint ne dépend par ailleurs pas uniquement de la résistance nominale de l’adhésif. La compatibilité adhésif–substrat, la rigidité relative des deux matériaux, l’épaisseur de la ligne de collage, la géométrie du joint et la préparation de surface peuvent modifier à la fois la charge ultime et le mode de rupture. Une étude récente comparant plusieurs familles d’adhésifs sur des thermoplastiques imprimés, dont le PETG, conclut que le **type d’adhésif** est le facteur dominant de la résistance du joint parmi les variables étudiées [[4]](#ref-4). D’autres travaux spécifiques aux assemblages PETG imprimés confirment que les paramètres d’impression et l’épaisseur de l’adhésif influencent significativement la résistance et le comportement de rupture des joints [[1](#ref-1), [2](#ref-2)].
 
 Les données publiées comparant directement cyanoacrylates et époxys sur **PETG imprimé** demeurent limitées. Sur d’autres polymères imprimés, Yap *et al.* ont toutefois mesuré des résistances de joint plus élevées avec un cyanoacrylate qu’avec un époxy pour les matériaux ASA et Nylon 12 chargé de fibres de carbone [[5]](#ref-5). Cette observation ne peut pas être transposée quantitativement au PETG, mais elle montre que la supériorité d’un époxy ne peut pas être présumée pour une pièce imprimée.
 
-Les retours de la communauté d’impression 3D sont eux-mêmes contradictoires : certains utilisateurs rapportent des assemblages PETG au cyanoacrylate assez résistants pour entraîner la rupture de la pièce, tandis que d’autres préfèrent l’époxy et signalent une faible tenue de certains cyanoacrylates [[[6]](#ref-6)(#ref-6), [[7]](#ref-7)(#ref-7)]. Ces divergences renforcent l’intérêt d’un essai comparatif réalisé avec les **adhésifs réellement disponibles**, le PETG réellement utilisé et un chargement représentatif de l’application Amavia.
+Les retours de la communauté d’impression 3D sont eux-mêmes contradictoires : certains utilisateurs rapportent des assemblages PETG au cyanoacrylate assez résistants pour entraîner la rupture de la pièce, tandis que d’autres préfèrent l’époxy et signalent une faible tenue de certains cyanoacrylates [[6](#ref-6), [7](#ref-7)]. Ces divergences renforcent l’intérêt d’un essai comparatif réalisé avec les **adhésifs réellement disponibles**, le PETG réellement utilisé et un chargement représentatif de l’application Amavia.
 
 Le présent travail constitue donc un essai comparatif d’ingénierie appliquée, et non une caractérisation normalisée de propriétés adhésives. Son objectif est d’identifier un système de collage approprié au col fileté du compartiment batterie d’une bouée Amavia, soumis à des sollicitations répétées en torsion et devant ultérieurement assurer une fonction d’étanchéité.
 
@@ -231,7 +231,7 @@ Les essais établissent ainsi que, pour la géométrie, le PETG, la préparation
 
 Le passage d’une rupture de l’adhésif à une déformation, une délamination ou une rupture du PETG est particulièrement significatif. Dans la littérature sur les assemblages de pièces imprimées, une rupture de l’adhérent peut survenir lorsque la résistance de l’interface de collage excède la résistance inter-couches de la pièce imprimée [[4]](#ref-4). Cette interprétation est compatible avec les observations faites ici pour les CA et, sur un des essais, pour le System Three Quick Cure 5.
 
-Ce comportement est aussi cohérent avec la nature anisotrope des pièces FDM. Les études consacrées au PETG montrent que la microstructure produite par dépôt couche par couche, l’orientation des filaments et la qualité des interfaces inter-couches modifient la réponse mécanique et peuvent favoriser la délamination [[[1]](#ref-1)(#ref-1)–[[3]](#ref-3)(#ref-3)]. Ainsi, lorsqu’une éprouvette se déforme ou se délamine avant le joint, l’essai ne caractérise plus seulement l’adhésif : il devient aussi un essai de la pièce imprimée et de la géométrie de serrage.
+Ce comportement est aussi cohérent avec la nature anisotrope des pièces FDM. Les études consacrées au PETG montrent que la microstructure produite par dépôt couche par couche, l’orientation des filaments et la qualité des interfaces inter-couches modifient la réponse mécanique et peuvent favoriser la délamination [[1](#ref-1)–[3](#ref-3)]. Ainsi, lorsqu’une éprouvette se déforme ou se délamine avant le joint, l’essai ne caractérise plus seulement l’adhésif : il devient aussi un essai de la pièce imprimée et de la géométrie de serrage.
 
 ## Mise en perspective avec la littérature
 
@@ -239,7 +239,7 @@ Les résultats obtenus ne sont pas directement comparables aux valeurs de résis
 
 Premièrement, la littérature montre que le choix de l’adhésif peut dominer la résistance d’un joint sur thermoplastique imprimé. Dans l’étude d’Öz et Öztürk, qui compare quatre familles d’adhésifs et quatre thermoplastiques imprimés, le type d’adhésif représente la contribution statistique la plus importante à la résistance du joint ; le polyuréthane est également la famille qui présente la capacité portante la plus faible dans leur série d’essais [[4]](#ref-4). Les formulations et la géométrie étant différentes, cela ne constitue pas une validation directe de notre classement, mais fournit un contexte cohérent avec la faible performance du Gorilla polyuréthane observée ici.
 
-Deuxièmement, les essais de Vamshinath *et al.* et de Khosravani *et al.* sur des joints PETG imprimés montrent que l’épaisseur du joint ainsi que les paramètres d’impression modifient la résistance et les modes de rupture [[[1]](#ref-1)(#ref-1), [[2]](#ref-2)(#ref-2)]. La performance mesurée dans le présent travail doit donc être considérée comme propre au procédé d’impression, à l’état de surface, à la géométrie et à l’application des adhésifs utilisés.
+Deuxièmement, les essais de Vamshinath *et al.* et de Khosravani *et al.* sur des joints PETG imprimés montrent que l’épaisseur du joint ainsi que les paramètres d’impression modifient la résistance et les modes de rupture [[1](#ref-1), [2](#ref-2)]. La performance mesurée dans le présent travail doit donc être considérée comme propre au procédé d’impression, à l’état de surface, à la géométrie et à l’application des adhésifs utilisés.
 
 Troisièmement, Yap *et al.* ont observé, sur deux autres polymères imprimés, des joints cyanoacrylate plus résistants que des joints époxy [[5]](#ref-5). Bien que leurs substrats ne soient pas du PETG, ce résultat montre qu’un CA peut surpasser un époxy sur des pièces FDM et donne un précédent scientifique compatible avec notre observation expérimentale.
 
@@ -249,7 +249,7 @@ Le présent protocole ne permet pas de distinguer mécaniquement les deux CA : l
 
 Le CA régulier polymérise très rapidement et sa faible viscosité complique le contrôle d’un joint circulaire de grande dimension. Le CA épais offre, dans l’expérience réalisée, environ **1 à 2 minutes de temps de travail**, permet un repositionnement et facilite l’observation d’une couverture continue. Pour le col du compartiment batterie, ces caractéristiques réduisent le risque pratique de laisser une zone insuffisamment mouillée.
 
-L’hypothèse formulée pendant l’essai selon laquelle le CA pourrait pénétrer davantage dans la texture superficielle du PETG reste plausible, mais **n’est pas démontrée** par les mesures présentes. La littérature consultée permet d’affirmer que la préparation de surface et la structure imprimée peuvent influencer la performance d’un joint [[[1]](#ref-1)(#ref-1), [[2]](#ref-2)(#ref-2), [[4]](#ref-4)(#ref-4)], mais elle ne permet pas d’attribuer ici la bonne performance du CA à un mécanisme microscopique particulier.
+L’hypothèse formulée pendant l’essai selon laquelle le CA pourrait pénétrer davantage dans la texture superficielle du PETG reste plausible, mais **n’est pas démontrée** par les mesures présentes. La littérature consultée permet d’affirmer que la préparation de surface et la structure imprimée peuvent influencer la performance d’un joint [[1](#ref-1), [2](#ref-2), [4](#ref-4)], mais elle ne permet pas d’attribuer ici la bonne performance du CA à un mécanisme microscopique particulier.
 
 ## Retours de la communauté
 
@@ -313,10 +313,10 @@ Cette hypothèse n'est toutefois pas démontrée par l'essai.
 
 Les deux surfaces sont :
 
-<a id="ref-1"></a>**[1]** poncées à différents grades de papier abrasif ;
-<a id="ref-2"></a>**[2]** nettoyées avec de l'**alcool isopropylique à 99 %** ;
-<a id="ref-3"></a>**[3]** enduites d’adhésif ;
-<a id="ref-4"></a>**[4]** assemblées en s'assurant que toute la circonférence du joint est couverte.
+1. poncées à différents grades de papier abrasif ;
+2. nettoyées avec de l'**alcool isopropylique à 99 %** ;
+3. enduites d’adhésif ;
+4. assemblées en s'assurant que toute la circonférence du joint est couverte.
 
 L’adhésif est appliqué sur les deux surfaces.
 
@@ -346,7 +346,7 @@ Dans les conditions spécifiques de cet essai, les six adhésifs présentent des
 
 Les deux **cyanoacrylates**, régulier et épais, constituent le résultat principal de l’étude : **aucun des quatre joints n’a rompu**. Les valeurs CAR-A > 20,4 N·m, CAR-B > 20,5 N·m, CAE-A > 20,9 N·m et CAE-B > 20,8 N·m doivent donc être considérées comme des bornes inférieures. À ces niveaux, le PETG ou le montage devient le facteur limitant.
 
-La littérature disponible confirme que la performance des joints sur pièces imprimées dépend fortement de la famille d’adhésif, des paramètres d’impression et du mode de rupture [[[1]](#ref-1)(#ref-1)–[[5]](#ref-5)(#ref-5)]. Elle fournit également des précédents où le cyanoacrylate surpasse l’époxy sur d’autres polymères FDM [[5]](#ref-5), sans toutefois permettre de généraliser ce résultat à tous les PETG ou à tous les produits commerciaux.
+La littérature disponible confirme que la performance des joints sur pièces imprimées dépend fortement de la famille d’adhésif, des paramètres d’impression et du mode de rupture [[1](#ref-1)–[5](#ref-5)]. Elle fournit également des précédents où le cyanoacrylate surpasse l’époxy sur d’autres polymères FDM [[5]](#ref-5), sans toutefois permettre de généraliser ce résultat à tous les PETG ou à tous les produits commerciaux.
 
 Pour l’application Amavia, le **cyanoacrylate épais** est retenu non parce qu’il a démontré une résistance supérieure au CA régulier — ce que le montage actuel ne permet pas d’établir — mais parce qu’il combine une résistance supérieure à la capacité mesurable de l’essai avec une viscosité et un temps de travail plus favorables à la réalisation d’un joint circulaire continu.
 
@@ -356,13 +356,13 @@ La validation n’est pas complète tant que la tenue à l’immersion, au vieil
 
 # Références
 
-1. Vamshinath, K., Niteesh Kumar, N., Tarun Kumar, R., Nagaraju, D. S., Sateesh, N. & Subbaiah, R. (2022). “Analysis of the effect of the process parameters on the mechanical strength of 3D printed and adhesively bonded PETG single lap joint.” *Materials Today: Proceedings*, 62, 4509–4514. https://doi.org/10.1016/j.matpr.2022.04.950
+<a id="ref-1"></a>**[1]** Vamshinath, K., Niteesh Kumar, N., Tarun Kumar, R., Nagaraju, D. S., Sateesh, N. & Subbaiah, R. (2022). “Analysis of the effect of the process parameters on the mechanical strength of 3D printed and adhesively bonded PETG single lap joint.” *Materials Today: Proceedings*, 62, 4509–4514. https://doi.org/10.1016/j.matpr.2022.04.950
 
-2. Khosravani, M. R., Soltani, P. & Reinicke, T. (2021). “Fracture and structural performance of adhesively bonded 3D-printed PETG single lap joints under different printing parameters.” *Theoretical and Applied Fracture Mechanics*, 116, 103087. https://doi.org/10.1016/j.tafmec.2021.103087
+<a id="ref-2"></a>**[2]** Khosravani, M. R., Soltani, P. & Reinicke, T. (2021). “Fracture and structural performance of adhesively bonded 3D-printed PETG single lap joints under different printing parameters.” *Theoretical and Applied Fracture Mechanics*, 116, 103087. https://doi.org/10.1016/j.tafmec.2021.103087
 
-3. “Exploring the Role of Manufacturing Parameters on Microstructure and Mechanical Properties in Fused Deposition Modeling (FDM) Using PETG.” (2021). *Applied Composite Materials*, 28, 1799–1828. https://doi.org/10.1007/s10443-021-09940-9
+<a id="ref-3"></a>**[3]** “Exploring the Role of Manufacturing Parameters on Microstructure and Mechanical Properties in Fused Deposition Modeling (FDM) Using PETG.” (2021). *Applied Composite Materials*, 28, 1799–1828. https://doi.org/10.1007/s10443-021-09940-9
 
-4. Öz, Ö. & Öztürk, F. H. (2025). “The effect of adhesive and adherend compliance on the failure of 3D-printed parts.” *Welding in the World*, 69, 2869–2883. https://doi.org/10.1007/s40194-025-02048-9
+<a id="ref-4"></a>**[4]** Öz, Ö. & Öztürk, F. H. (2025). “The effect of adhesive and adherend compliance on the failure of 3D-printed parts.” *Welding in the World*, 69, 2869–2883. https://doi.org/10.1007/s40194-025-02048-9
 
 <a id="ref-5"></a>**[5]** Yap, Y. L., Toh, W., Koneru, R., Lin, R., Chan, K. I., Guang, H., Chan, W. Y. B., Teong, S. S., Zheng, G. & Ng, T. Y. (2020). “Evaluation of structural epoxy and cyanoacrylate adhesives on jointed 3D printed polymeric materials.” *International Journal of Adhesion and Adhesives*, 100, 102602. https://doi.org/10.1016/j.ijadhadh.2020.102602
 
