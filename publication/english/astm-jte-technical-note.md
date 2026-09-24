@@ -94,7 +94,7 @@ Early specimens used a square drive feature. Later specimens used a hexagonal dr
 
 For all adhesive systems, both mating surfaces were abraded and then cleaned with **99 % isopropyl alcohol** before bonding. The exact abrasive grit sequence is still being documented.
 
-After adhesive application and assembly, the specimens were **lightly pressed together** during the initial bonding period. All bonded specimens were allowed to cure for **13 days before mechanical testing**.
+After adhesive application and assembly, the specimens were **positioned and left undisturbed, without applied clamping pressure, during curing**. All bonded specimens were allowed to cure for **13 days before mechanical testing**.
 
 <!-- TODO: Document exact abrasive grit sequence used on the test specimens. -->
 <!-- TODO: Document adhesive quantity or application method and confirm whether adhesive was applied to one or both mating surfaces for each adhesive system. -->
