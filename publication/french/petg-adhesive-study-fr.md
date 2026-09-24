@@ -67,6 +67,21 @@ Les sièges sociaux des fabricants identifiés ont été vérifiés à partir de
 
 Les éprouvettes et les pièces d’application ont été fabriquées en **OVERTURE PETG Rock White, diamètre 1,75 mm**, commercialisé par **Overture 3D Technologies, LLC** (10777 Westheimer Rd, Suite 159, Houston, Texas 77042, États-Unis).
 
+## Paramètres d’impression
+
+Les éprouvettes ont été imprimées sur une **Original Prusa i3 MK3** en utilisant le profil Prusa par défaut pour filament PETG, avec les paramètres suivants :
+
+- température de la buse : **250 °C** ;
+- température du plateau : **80 °C** ;
+- plateau : **surface PEI originale Prusa** ;
+- aucun adhésif appliqué sur le plateau ;
+- nettoyage du plateau à l’**alcool isopropylique à 99 % avant chaque impression** ;
+- hauteur de couche : **0,15 mm** ;
+- remplissage : **15 %** ;
+- parois : **4 périmètres** ;
+- couches supérieures : **6** ;
+- couches inférieures : **6**.
+
 ## Éprouvettes
 
 Deux éprouvettes PETG sont préparées pour chaque adhésif.
