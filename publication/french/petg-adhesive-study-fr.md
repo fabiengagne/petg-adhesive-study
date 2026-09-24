@@ -45,19 +45,21 @@ Six produits ou familles d’adhésifs ont été comparés :
 
 | Adhésif | Type | Manufacturier / siège social |
 |---|---|---|
-| **JB Weld** | Époxy bicomposant | **J-B Weld Company, LLC** (Marietta, Georgia, États-Unis) |
-| **Gorilla Polyurethane** | Adhésif polyuréthane | **The Gorilla Glue Company** (Cincinnati, Ohio, États-Unis) |
-| **Cyanoacrylate épais** | CA visqueux, produit bon marché provenant de Dollarama | **Adhaero** (manufacturier réel non identifié avec certitude ; produit commercialisé chez Dollarama. **Dollarama Inc.** (Montréal, Québec, Canada) est indiqué ici comme détaillant/distributeur, et non comme manufacturier confirmé. |
-| **Cyanoacrylate régulier** | CA liquide, même marque que le CA épais | **Adhaero** (manufacturier réel non identifié avec certitude ; produit commercialisé chez Dollarama. **Dollarama Inc.** (Montréal, Québec, Canada) est indiqué ici comme détaillant/distributeur, et non comme manufacturier confirmé. |
-| **Titebond III** | Adhésif à bois résistant à l'eau | **Franklin International, Inc.** (Columbus, Ohio, États-Unis) |
-| **System Three Quick Cure 5** | Époxy à prise rapide, 5 minutes | **System Three Resins, Inc.** (Lacey, Washington, États-Unis) |
+| **J-B Weld, Epoxy Steel Resin / Epoxy Steel Hardener (28,4 g chacun)** | Époxy bicomposant | **J-B Weld Company, LLC** (Marietta, Georgia, États-Unis) |
+| **Original Gorilla Glue Minis** | Adhésif polyuréthane | **The Gorilla Glue Company** (Cincinnati, Ohio, États-Unis) |
+| **stuck Thick Gel Super Glue, 3 g** | CA visqueux, produit bon marché provenant de Dollarama | **stuck** (manufacturier réel non identifié avec certitude ; produit commercialisé chez Dollarama. **Dollarama Inc.** (Montréal, Québec, Canada) est indiqué ici comme détaillant/distributeur, et non comme manufacturier confirmé. |
+| **stuck Super Glue, 1 g** | CA liquide, même marque que le CA épais | **stuck** (manufacturier réel non identifié avec certitude ; produit commercialisé chez Dollarama. **Dollarama Inc.** (Montréal, Québec, Canada) est indiqué ici comme détaillant/distributeur, et non comme manufacturier confirmé. |
+| **Titebond III Ultimate Wood Glue, 8 fl oz (237 mL)** | Adhésif à bois résistant à l'eau | **Franklin International, Inc.** (Columbus, Ohio, États-Unis) |
+| **System Three Quick Cure 5, 5 Minute Epoxy Adhesive, 4 fl oz (118 mL) par composant** | Époxy à prise rapide, 5 minutes | **System Three Resins, Inc.** (Lacey, Washington, États-Unis) |
 
 La Titebond III est incluse comme essai exploratoire. Elle n'est pas destinée au PETG, mais sa fluidité et sa résistance à l'eau rendaient intéressant de vérifier si elle pouvait pénétrer dans la texture de l'impression et fournir un collage acceptable.
 
 
 ### Identification des manufacturiers
 
-Les sièges sociaux des fabricants identifiés ont été vérifiés à partir de sources publiques des entreprises. Pour les cyanoacrylates **Adhaero**, les sources commerciales permettent de confirmer la marque et sa vente chez Dollarama, mais pas d'identifier de manière fiable l'entité manufacturière derrière le produit. Pour cette raison, **Dollarama Inc. (Montréal, Québec, Canada)** est mentionnée uniquement comme détaillant/distributeur. L'époxy à prise rapide a pu être identifié visuellement comme **System Three Quick Cure 5**, fabriqué par **System Three Resins, Inc.**
+Les sièges sociaux des fabricants identifiés ont été vérifiés à partir de sources publiques des entreprises. Pour les cyanoacrylates **stuck**, les photographies confirment les désignations commerciales et leur vente chez Dollarama, mais ne permettent pas d'identifier de manière fiable l'entité manufacturière derrière le produit. Pour cette raison, **Dollarama Inc. (Montréal, Québec, Canada)** est mentionnée uniquement comme détaillant/distributeur. L'époxy à prise rapide a pu être identifié visuellement comme **System Three Quick Cure 5**, fabriqué par **System Three Resins, Inc.**
+
+Les photographies des contenants montrent les codes de sertissage ou d'emballage suivants : **250328** sur le tube Original Gorilla Glue Minis, **0526** sur le tube stuck Thick Gel Super Glue et **0326** sur le tube stuck Super Glue. Aucun libellé sur les emballages ne permet d'établir avec certitude qu'il s'agit de numéros de lot ou de dates d'expiration. Ils sont donc consignés uniquement comme **codes d'emballage visibles**. Aucun numéro de lot explicite ni date d'expiration n'est visible sur les contenants J-B Weld, Titebond III ou System Three photographiés.
 
 ---
 
