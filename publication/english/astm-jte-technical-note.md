@@ -94,11 +94,11 @@ Early specimens used a square drive feature. Later specimens used a hexagonal dr
 
 For all adhesive systems, both mating surfaces were abraded and then cleaned with **99 % isopropyl alcohol** before bonding. The exact abrasive grit sequence is still being documented.
 
-After adhesive application and assembly, the specimens were **positioned and left undisturbed, without applied clamping pressure, during curing**. All bonded specimens were allowed to cure for **13 days before mechanical testing**.
+After adhesive application and assembly, the specimens were **positioned and left undisturbed, without applied clamping pressure, during curing**. Curing was carried out at approximately **22 °C and 40 % relative humidity**. All bonded specimens were allowed to cure for **13 days before mechanical testing**.
 
 <!-- TODO: Document exact abrasive grit sequence used on the test specimens. -->
 <!-- TODO: Document adhesive quantity or application method and confirm whether adhesive was applied to one or both mating surfaces for each adhesive system. -->
-<!-- TODO: Document cure temperature and storage conditions during the 13-day curing period. -->
+
 
 For the subsequent full-scale application part, both mating surfaces were sanded with multiple abrasive grades, cleaned with 99 % isopropyl alcohol, coated with thick CA, and assembled while ensuring continuous adhesive coverage around the circumference. These application-part observations are not used as substitute data for the specimen preparation procedure and will be separated from the final specimen method description.
 
@@ -212,7 +212,7 @@ The following limitations define the scope of the current Technical Note:
 2. no statistical inference, repeatability estimate, or population-level strength ranking is possible;
 3. two fixture geometries were used during the preliminary series;
 4. the CA tests were limited by the PETG specimen or fixture rather than bond failure;
-5. the exact abrasive grit sequence, adhesive application details, and curing environment still require formal documentation before submission;
+5. the exact abrasive grit sequence and adhesive application details still require formal documentation before submission;
 6. instrument uncertainty has not yet been formally propagated;
 7. immersion, environmental aging, thermal cycling, and repeated torsional cycling have not yet been evaluated;
 8. the exact manufacturer formulation of the Adhaero CA products is not publicly documented and may vary with supply.
