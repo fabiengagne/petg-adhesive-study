@@ -104,7 +104,9 @@ For the subsequent full-scale application part, both mating surfaces were sanded
 
 ### 2.7 Torsional Screening Apparatus
 
-Torque was applied using a **SOARFLY YX01-24 digital torque wrench**. The specimen was held in a bench vise through a dedicated drive feature or socket arrangement, depending on specimen geometry. Torque was increased manually until one of the following occurred:
+Torque was applied using a **SOARFLY YX01-24 digital torque wrench**. The product listing identifies a maximum torque capacity of **220 N·m** and states a torque accuracy of **±1 %**. No manufacturer calibration certificate or detailed metrological specification was available to establish the applicable portion of the measurement range, directional dependence, resolution, or whether the ±1 % value is referenced to reading or full scale. The ±1 % value is therefore treated in this note as a **manufacturer/seller-stated accuracy claim**, not as an independently established measurement uncertainty.
+
+The specimen was held in a bench vise through a dedicated drive feature or socket arrangement, depending on specimen geometry. Torque was increased manually until one of the following occurred:
 
 1. adhesive or interfacial failure;
 2. fracture or delamination of the printed PETG;
@@ -113,9 +115,9 @@ Torque was applied using a **SOARFLY YX01-24 digital torque wrench**. The specim
 
 The torque wrench retained the maximum indicated torque reached during each loading event.
 
-Before the experiments, the instrument response was checked against known loads and was found to agree closely with the expected values.
+Before the experiments, the instrument response was checked against known loads and was found to agree closely with the expected values. This check was an in-house functional verification and was not a traceable calibration.
 
-<!-- TODO: Add manufacturer-rated torque range, resolution, stated accuracy, serial number if available, and details of the verification with known loads. -->
+<!-- TODO: Add display resolution and serial number if available. -->
 <!-- TODO: Describe the verification geometry, reference masses, lever arm, number of verification points, and measured errors. -->
 <!-- TODO: Record approximate torque application rate or test duration. -->
 
@@ -213,7 +215,7 @@ The following limitations define the scope of the current Technical Note:
 3. two fixture geometries were used during the preliminary series;
 4. the CA tests were limited by the PETG specimen or fixture rather than bond failure;
 5. adhesive application details still require formal documentation before submission;
-6. instrument uncertainty has not yet been formally propagated;
+6. the wrench carries a stated ±1 % accuracy claim, but no traceable calibration certificate or complete uncertainty specification was available, and measurement uncertainty has not yet been formally propagated;
 7. immersion, environmental aging, thermal cycling, and repeated torsional cycling have not yet been evaluated;
 8. the exact manufacturer formulation of the Adhaero CA products is not publicly documented and may vary with supply.
 
