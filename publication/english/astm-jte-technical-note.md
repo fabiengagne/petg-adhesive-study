@@ -91,7 +91,7 @@ Early specimens used a square drive feature. Later specimens used the 21.0-mm-ac
 
 <!-- TODO: Insert a dimensioned drawing derived from the STL and identify any additional critical dimensions needed for reproduction. -->
 <!-- TODO: Confirm the exact bond-line thickness, if it can be reconstructed from the assembled specimens or preparation records. -->
-<!-- TODO: Add the original STL file to the repository supplementary material and cite its repository path here. -->
+The original specimen STL is provided as supplementary material at [`supplementary/stl/adhesive-test-specimen.stl`](https://github.com/fabiengagne/petg-adhesive-study/blob/main/supplementary/stl/adhesive-test-specimen.stl).
 
 ### 2.6 Surface Preparation and Bonding Procedure
 
@@ -243,7 +243,7 @@ The working manuscript and project files are maintained in the public repository
 
 https://github.com/fabiengagne/petg-adhesive-study
 
-Planned supplementary material includes the original specimen STL file, a dimensioned drawing derived from that geometry, test photographs, adhesive packaging photographs, and additional experimental data. The supplied STL geometry has already been used to determine the dimensions reported in Section 2.5.
+The original specimen STL is available at [`supplementary/stl/adhesive-test-specimen.stl`](https://github.com/fabiengagne/petg-adhesive-study/blob/main/supplementary/stl/adhesive-test-specimen.stl). Planned additional supplementary material includes a dimensioned drawing derived from that geometry, test photographs, adhesive packaging photographs, and additional experimental data. The STL geometry was used to determine the dimensions reported in Section 2.5.
 
 ## Author Contributions
 
