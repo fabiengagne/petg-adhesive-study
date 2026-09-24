@@ -4,8 +4,8 @@ Experimental comparison of adhesives for bonding FDM-printed PETG parts, with an
 
 ## Repository structure
 
-- `publication/french/` — French version of the technical publication
-- `publication/english/` — Future English version
+- `publication/french/` — French version of the test report
+- `publication/english/` — Future English version of the technical report (peer reviewed)
 - `media/photos/` — Experimental setup, specimens, adhesives, failure modes, and application photos
 - `data/` — Experimental data and future structured datasets
 
@@ -15,5 +15,5 @@ The French publication is the current working version. An English version and ad
 
 ## Authors
 
-Jacques Girard, Fabien Gagné  
+Fabien Gagné, Jacques Girard
 Mostly Intentional Design Labs, Montréal, QC, Canada
