@@ -54,6 +54,7 @@ Specimens were produced on an **Original Prusa i3 MK3** using the default Prusa 
 | Build-plate cleaning | 99 % isopropyl alcohol before each print |
 | Layer height | 0.15 mm |
 | Infill | 15 % |
+| Infill pattern | Cubic |
 | Perimeters | 4 |
 | Top solid layers | 6 |
 | Bottom solid layers | 6 |
@@ -92,11 +93,10 @@ Early specimens used a square drive feature. Later specimens used a hexagonal dr
 
 ### 2.6 Surface Preparation and Bonding Procedure
 
-For all adhesive systems, both mating surfaces were abraded and then cleaned with **99 % isopropyl alcohol** before bonding. The exact abrasive grit sequence is still being documented.
+For all adhesive systems, both mating surfaces were abraded using **600-grit sandpaper** and then cleaned with **99 % isopropyl alcohol** before bonding.
 
 After adhesive application and assembly, the specimens were **positioned and left undisturbed, without applied clamping pressure, during curing**. Curing was carried out at approximately **22 °C and 40 % relative humidity**. All bonded specimens were allowed to cure for **13 days before mechanical testing**.
 
-<!-- TODO: Document exact abrasive grit sequence used on the test specimens. -->
 <!-- TODO: Document adhesive quantity or application method and confirm whether adhesive was applied to one or both mating surfaces for each adhesive system. -->
 
 
@@ -212,7 +212,7 @@ The following limitations define the scope of the current Technical Note:
 2. no statistical inference, repeatability estimate, or population-level strength ranking is possible;
 3. two fixture geometries were used during the preliminary series;
 4. the CA tests were limited by the PETG specimen or fixture rather than bond failure;
-5. the exact abrasive grit sequence and adhesive application details still require formal documentation before submission;
+5. adhesive application details still require formal documentation before submission;
 6. instrument uncertainty has not yet been formally propagated;
 7. immersion, environmental aging, thermal cycling, and repeated torsional cycling have not yet been evaluated;
 8. the exact manufacturer formulation of the Adhaero CA products is not publicly documented and may vary with supply.
@@ -231,7 +231,7 @@ The data do not establish statistically significant differences between adhesive
 
 Thick CA was selected for subsequent full-scale watertight assembly trials because it combined a lower-bound torsional capacity above 20 N·m with better handling and positioning characteristics than the low-viscosity CA.
 
-Further work will complete documentation of the abrasive preparation and adhesive application procedure, incorporate the specimen STL geometry as supplementary material, increase replication, improve the fixture, and evaluate immersion and repeated torsional cycling.
+Further work will complete documentation of the adhesive application procedure, incorporate the specimen STL geometry as supplementary material, increase replication, improve the fixture, and evaluate immersion and repeated torsional cycling.
 
 ## Data and Supplementary Materials
 
