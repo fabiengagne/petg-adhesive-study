@@ -99,6 +99,10 @@ Les premières éprouvettes possèdent une prise carrée. Les suivantes utilisen
 
 Le fichier STL original de l’éprouvette est disponible dans le dépôt à l’emplacement `supplementary/stl/adhesive-test-specimen.stl`.
 
+![Schéma dimensionnel de l’éprouvette](../../media/figures/specimen-dimensioned-fr.svg)
+
+*Figure 1. Vues orthographiques cotées de l’éprouvette à entraînement hexagonal, dérivées de la géométrie STL corrigée. Dimensions en millimètres; vues non à l’échelle.*
+
 ### Préparation des surfaces et collage des éprouvettes
 
 Pour tous les systèmes adhésifs, les deux surfaces à assembler ont été abrasées avec du papier sablé **grain 600**, puis nettoyées à l’**alcool isopropylique à 99 %** avant collage.
@@ -107,7 +111,7 @@ Après application de l’adhésif et assemblage, les éprouvettes ont été **p
 
 ## Instrumentation
 
-Le couple est mesuré à l'aide d'une **clé dynamométrique numérique SOARFLY, modèle YX01-24** (*Digital Torque Wrench*). La fiche commerciale consultée indique une capacité maximale de **220 N·m** et une exactitude annoncée de **±1 %**. Aucun certificat d’étalonnage du fabricant ni spécification métrologique détaillée n’était disponible pour préciser la portion de la plage concernée, l’influence du sens de rotation, la résolution, ou si le ±1 % est relatif à la lecture ou à la pleine échelle. Cette valeur est donc considérée ici comme une **spécification annoncée par le fabricant ou le vendeur**, et non comme une incertitude de mesure établie indépendamment.
+Le couple est mesuré à l'aide d'une **clé dynamométrique numérique SOARFLY, modèle YX01-24** (*Digital Torque Wrench*), dont l’affichage a une résolution de **0,1 N·m**. La fiche commerciale consultée indique une capacité maximale de **220 N·m** et une exactitude annoncée de **±1 %**. Aucun certificat d’étalonnage du fabricant ni spécification métrologique détaillée n’était disponible pour préciser la portion de la plage concernée, l’influence du sens de rotation, la résolution, ou si le ±1 % est relatif à la lecture ou à la pleine échelle. Cette valeur est donc considérée ici comme une **spécification annoncée par le fabricant ou le vendeur**, et non comme une incertitude de mesure établie indépendamment.
 
 L’éprouvette est maintenue dans un étau par sa géométrie de prise ou par une douille, selon la version de l’éprouvette. Le couple est augmenté manuellement jusqu’à l’apparition d’un des événements suivants :
 
@@ -118,7 +122,7 @@ L’éprouvette est maintenue dans un étau par sa géométrie de prise ou par u
 
 L’instrument conserve la valeur maximale atteinte pendant chaque chargement.
 
-Avant les essais, la réponse de l’instrument a été vérifiée à l’aide de charges de valeur connue et s’est révélée très proche des valeurs attendues. Cette vérification constituait une **vérification fonctionnelle interne** et non un étalonnage traçable.
+Avant les essais, la réponse de l’instrument a été vérifiée à l’aide de charges de valeur connue et s’est révélée très proche des valeurs attendues. Cette vérification constituait une **vérification fonctionnelle interne** et non un étalonnage traçable. Le rapport de cette vérification est conservé dans le dépôt sous `internal-tests/torque-wrench-verification/torque-wrench-verification-report.md`.
 
 Les résultats sont exprimés sous forme de **couple appliqué en N·m**. Ils ne sont pas convertis en contrainte de cisaillement de l’adhésif, puisque la géométrie du joint et la distribution des contraintes sont spécifiques à l’application et ne correspondent pas à un essai de cisaillement uniforme normalisé.
 
@@ -309,7 +313,7 @@ Plusieurs limites doivent être conservées à l’esprit :
 - la clé dynamométrique comporte une exactitude annoncée de ±1 %, mais aucun certificat d’étalonnage traçable ni spécification complète d’incertitude n’était disponible, et l’incertitude de mesure n’a pas été propagée formellement ;
 - deux géométries de prise ont été utilisées pendant cette série préliminaire ;
 - la résistance à l’eau, au vieillissement, aux cycles thermiques et aux ouvertures/fermetures répétées n’est pas encore caractérisée ;
-- la formulation exacte des cyanoacrylates Adhaero n’est pas documentée et pourrait varier avec l’approvisionnement.
+- la formulation exacte des cyanoacrylates stuck n’est pas documentée et pourrait varier avec l’approvisionnement.
 
 Un travail ultérieur pourrait utiliser davantage d’éprouvettes, un montage capable de dépasser 21 N·m sans glissement ni déformation parasite, et un protocole normalisé de cisaillement en recouvrement en complément du présent essai applicatif. Des essais après immersion et après cyclage mécanique seraient particulièrement pertinents pour l’usage marin visé.
 
