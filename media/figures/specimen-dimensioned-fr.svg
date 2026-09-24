@@ -1,26 +1,59 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850">
-<defs><marker id="a" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8 z" fill="#000"/></marker></defs>
-<g fill="none" stroke="#000" stroke-width="2">
-<rect x="40" y="45" width="245" height="80"/>
-<path d="M145 560 H455 V500 H420 V380 H180 V500 H145 Z"/>
-<path d="M300 350 V590" stroke-dasharray="12 6 2 6"/>
-<line x1="455" y1="380" x2="500" y2="380"/><line x1="455" y1="560" x2="500" y2="560"/><line x1="490" y1="385" x2="490" y2="555" marker-start="url(#a)" marker-end="url(#a)"/>
-<line x1="145" y1="560" x2="100" y2="560"/><line x1="145" y1="518" x2="100" y2="518"/><line x1="110" y1="555" x2="110" y2="523" marker-start="url(#a)" marker-end="url(#a)"/>
-<line x1="145" y1="518" x2="70" y2="518"/><line x1="180" y1="497" x2="70" y2="497"/><line x1="80" y1="513" x2="80" y2="502" marker-start="url(#a)" marker-end="url(#a)"/>
-<line x1="300" y1="610" x2="300" y2="565" marker-end="url(#a)"/>
-<circle cx="850" cy="265" r="125"/>
-<line x1="705" y1="265" x2="995" y2="265" stroke-dasharray="12 6 2 6"/><line x1="850" y1="120" x2="850" y2="410" stroke-dasharray="12 6 2 6"/>
-<line x1="725" y1="100" x2="975" y2="100" marker-start="url(#a)" marker-end="url(#a)"/><line x1="725" y1="100" x2="725" y2="265"/><line x1="975" y1="100" x2="975" y2="265"/>
-<polygon points="850,500 955,561 955,682 850,743 745,682 745,561"/>
-<line x1="720" y1="621" x2="980" y2="621" stroke-dasharray="12 6 2 6"/><line x1="850" y1="475" x2="850" y2="768" stroke-dasharray="12 6 2 6"/>
-<line x1="759" y1="785" x2="941" y2="785" marker-start="url(#a)" marker-end="url(#a)"/><line x1="759" y1="682" x2="759" y2="785"/><line x1="941" y1="682" x2="941" y2="785"/>
-</g>
-<g font-family="Arial,Helvetica,sans-serif" fill="#000">
-<text x="162" y="68" font-size="20" text-anchor="middle"><tspan x="162">Dimensions en mm</tspan><tspan x="162" dy="23">Aire collée : 490,9 mm²</tspan><tspan x="162" dy="23">Vues orthographiques, non à l’échelle</tspan></text>
-<text x="300" y="350" font-size="24" text-anchor="middle">Vue de côté</text>
-<text x="515" y="475" font-size="21">13,0 mm</text>
-<text x="93" y="543" font-size="18" text-anchor="end">3,0</text><text x="63" y="511" font-size="18" text-anchor="end">1,5</text>
-<text x="300" y="640" font-size="22" text-anchor="middle">Face collée</text>
-<text x="850" y="70" font-size="24" text-anchor="middle">Face collée view</text><text x="850" y="92" font-size="22" text-anchor="middle">⌀25,0 mm</text>
-<text x="850" y="460" font-size="24" text-anchor="middle">Vue de l’extrémité hexagonale</text><text x="850" y="820" font-size="22" text-anchor="middle">21,0 mm entre plats</text>
-</g></svg>
+ <defs>
+  <marker id="dimArrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse" markerUnits="strokeWidth">
+   <path d="M0,1 L9,5 L0,9 Z" fill="#000"/>
+  </marker>
+ </defs>
+ <rect width="1200" height="850" fill="#fff"/>
+ <g font-family="Arial,Helvetica,sans-serif" fill="#000">
+  <text x="600" y="42" text-anchor="middle" font-size="28">Géométrie de l’éprouvette d’adhésif</text>
+  <rect x="40" y="72" width="385" height="112" fill="none" stroke="#000" stroke-width="1.5"/>
+  <text x="58" y="105" font-size="19">Dimensions en mm</text>
+  <text x="58" y="136" font-size="19">Aire collée : 490,9 mm²</text>
+  <text x="58" y="167" font-size="19">Vues orthographiques, non à l’échelle</text>
+ </g>
+ <!-- Side view: corrected STL, nominal dimensions -->
+ <g fill="none" stroke="#000">
+  <path d="M120 640 L500 640 L500 592 L470 568 L470 410 L150 410 L150 568 L120 592 Z" stroke-width="3"/>
+  <line x1="310" y1="382" x2="310" y2="670" stroke-width="1.4" stroke-dasharray="18 6 3 6"/>
+  <!-- Overall height dimension, extension lines offset from object -->
+  <line x1="510" y1="640" x2="560" y2="640" stroke-width="1.2"/>
+  <line x1="480" y1="410" x2="560" y2="410" stroke-width="1.2"/>
+  <line x1="548" y1="638" x2="548" y2="412" stroke-width="1.3" marker-start="url(#dimArrow)" marker-end="url(#dimArrow)"/>
+  <!-- Bonded face leader -->
+  <line x1="310" y1="697" x2="310" y2="648" stroke-width="1.2" marker-end="url(#dimArrow)"/>
+ </g>
+ <g font-family="Arial,Helvetica,sans-serif" fill="#000">
+  <text x="310" y="375" text-anchor="middle" font-size="23">Vue de côté</text>
+  <text x="570" y="530" font-size="20" transform="rotate(-90 570 530)">13,0 mm</text>
+  <text x="310" y="727" text-anchor="middle" font-size="20">Face collée</text>
+ </g>
+ <!-- Bonded face view -->
+ <g fill="none" stroke="#000">
+  <circle cx="900" cy="300" r="150" stroke-width="3"/>
+  <line x1="728" y1="300" x2="1072" y2="300" stroke-width="1.4" stroke-dasharray="18 6 3 6"/>
+  <line x1="900" y1="128" x2="900" y2="472" stroke-width="1.4" stroke-dasharray="18 6 3 6"/>
+  <!-- diameter dimension above, standard inward-facing endpoints on extension lines -->
+  <line x1="750" y1="142" x2="750" y2="92" stroke-width="1.2"/>
+  <line x1="1050" y1="142" x2="1050" y2="92" stroke-width="1.2"/>
+  <line x1="752" y1="104" x2="1048" y2="104" stroke-width="1.3" marker-start="url(#dimArrow)" marker-end="url(#dimArrow)"/>
+ </g>
+ <g font-family="Arial,Helvetica,sans-serif" fill="#000">
+  <text x="900" y="68" text-anchor="middle" font-size="23">Vue de la face collée</text>
+  <text x="900" y="96" text-anchor="middle" font-size="20">⌀25,0 mm</text>
+ </g>
+ <!-- Hex end view, point-up; 21 mm across vertical flats shown horizontally -->
+ <g fill="none" stroke="#000">
+  <polygon points="900,540 1005,601 1005,723 900,784 795,723 795,601" stroke-width="3"/>
+  <line x1="773" y1="662" x2="1027" y2="662" stroke-width="1.4" stroke-dasharray="18 6 3 6"/>
+  <line x1="900" y1="518" x2="900" y2="806" stroke-width="1.4" stroke-dasharray="18 6 3 6"/>
+  <!-- across-flats dimension below, clear of geometry -->
+  <line x1="795" y1="730" x2="795" y2="822" stroke-width="1.2"/>
+  <line x1="1005" y1="730" x2="1005" y2="822" stroke-width="1.2"/>
+  <line x1="797" y1="810" x2="1003" y2="810" stroke-width="1.3" marker-start="url(#dimArrow)" marker-end="url(#dimArrow)"/>
+ </g>
+ <g font-family="Arial,Helvetica,sans-serif" fill="#000">
+  <text x="900" y="505" text-anchor="middle" font-size="23">Vue de l’extrémité hexagonale</text>
+  <text x="900" y="842" text-anchor="middle" font-size="20">21,0 mm entre plats</text>
+ </g>
+</svg>
