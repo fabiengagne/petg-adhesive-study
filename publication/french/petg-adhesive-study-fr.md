@@ -13,7 +13,7 @@ Cette étude comparative évalue la performance de six adhésifs pour l’assemb
 
 ## Introduction
 
-L’assemblage par adhésif de pièces issues de fabrication additive constitue un problème distinct de celui des polymères moulés, car la structure couche par couche introduit une anisotropie (propriété qui dépend de la direction dans laquelle on la mesure), une porosité interne et des interfaces inter-couches susceptibles de devenir les éléments limitants du joint. Des travaux consacrés au PETG imprimé par extrusion montrent notamment que les paramètres de fabrication (orientation du raster, largeur d’extrusion, hauteur de couche et qualité des liaisons inter-couches (influencent fortement la rigidité, la résistance et les modes de rupture des pièces [[1](#ref-1), [2](#ref-2), [3](#ref-3)].
+L’assemblage par adhésif de pièces issues de fabrication additive constitue un problème distinct de celui des polymères moulés, car la structure couche par couche introduit une anisotropie (propriété qui dépend de la direction dans laquelle on la mesure), une porosité interne et des interfaces inter-couches susceptibles de devenir les éléments limitants du joint. Des travaux consacrés au PETG imprimé par extrusion montrent notamment que les paramètres de fabrication (orientation du raster, largeur d’extrusion, hauteur de couche et qualité des liaisons inter-couches) influencent fortement la rigidité, la résistance et les modes de rupture des pièces [[1](#ref-1), [2](#ref-2), [3](#ref-3)].
 
 Le comportement d’un joint ne dépend par ailleurs pas uniquement de la résistance nominale de l’adhésif. La compatibilité adhésif–substrat, la rigidité relative des deux matériaux, l’épaisseur de la ligne de collage, la géométrie du joint et la préparation de surface peuvent modifier à la fois la charge ultime et le mode de rupture. Une étude récente comparant plusieurs familles d’adhésifs sur des thermoplastiques imprimés, dont le PETG, conclut que le **type d’adhésif** est le facteur dominant de la résistance du joint parmi les variables étudiées [[4]](#ref-4). D’autres travaux spécifiques aux assemblages PETG imprimés confirment que les paramètres d’impression et l’épaisseur de l’adhésif influencent significativement la résistance et le comportement de rupture des joints [[1](#ref-1), [2](#ref-2)].
 
@@ -83,37 +83,58 @@ Les éprouvettes ont été imprimées sur une **Original Prusa i3 MK3** en utili
 - couches supérieures : **6** ;
 - couches inférieures : **6**.
 
+Les éprouvettes ont été imprimées avec **l’interface de collage directement sur le plateau**, de sorte que la face collée correspond à la surface de la première couche.
+
 ## Éprouvettes
 
-Deux éprouvettes PETG sont préparées pour chaque adhésif.
+Deux éprouvettes PETG ont été préparées pour chaque adhésif, pour un total de **12 éprouvettes**.
 
 La géométrie permet d'appliquer un **couple de torsion**, afin de reproduire le plus fidèlement possible le chargement réel attendu sur le col fileté du compartiment batterie.
 
-Les premières éprouvettes possèdent une prise carrée. Les suivantes utilisent une prise hexagonale, ce qui entraîne une légère modification du montage en cours d'essai.
+Le modèle de stéréolithographie (STL) fourni a été mesuré directement. L’éprouvette mesure **13,0 mm de hauteur totale** et **25,0 mm de diamètre maximal**. L’interface de collage est la face circulaire de première couche, imprimée directement sur le plateau, avec un diamètre nominal de **25,0 mm** et une aire plane nominale de **490,9 mm²**. L’extrémité opposée comporte une prise hexagonale de **21,0 mm entre plats**. La zone cylindrique de collage se raccorde à la zone hexagonale au-dessus de la face collée.
+
+Les premières éprouvettes possèdent une prise carrée. Les suivantes utilisent la prise hexagonale de 21,0 mm entre plats représentée par le fichier STL et peuvent être engagées directement dans une douille. Cette modification du montage constitue une limite de cette série préliminaire.
+
+Le fichier STL original de l’éprouvette est disponible dans le dépôt à l’emplacement `supplementary/stl/adhesive-test-specimen.stl`.
+
+### Préparation des surfaces et collage des éprouvettes
+
+Pour tous les systèmes adhésifs, les deux surfaces à assembler ont été abrasées avec du papier sablé **grain 600**, puis nettoyées à l’**alcool isopropylique à 99 %** avant collage.
+
+Après application de l’adhésif et assemblage, les éprouvettes ont été **positionnées puis laissées au repos sans pression de serrage appliquée** pendant la polymérisation. La polymérisation a été effectuée à environ **22 °C** et **40 % d’humidité relative**. Toutes les éprouvettes collées ont polymérisé pendant **13 jours avant les essais mécaniques**.
 
 ## Instrumentation
 
-Le couple est mesuré à l'aide d'une **clé dynamométrique numérique SOARFLY, modèle YX01-24** (*Digital Torque Wrench*).
+Le couple est mesuré à l'aide d'une **clé dynamométrique numérique SOARFLY, modèle YX01-24** (*Digital Torque Wrench*). La fiche commerciale consultée indique une capacité maximale de **220 N·m** et une exactitude annoncée de **±1 %**. Aucun certificat d’étalonnage du fabricant ni spécification métrologique détaillée n’était disponible pour préciser la portion de la plage concernée, l’influence du sens de rotation, la résolution, ou si le ±1 % est relatif à la lecture ou à la pleine échelle. Cette valeur est donc considérée ici comme une **spécification annoncée par le fabricant ou le vendeur**, et non comme une incertitude de mesure établie indépendamment.
 
-Le montage est maintenu dans un étau et l'instrument conserve la valeur maximale atteinte pendant l'essai.
+L’éprouvette est maintenue dans un étau par sa géométrie de prise ou par une douille, selon la version de l’éprouvette. Le couple est augmenté manuellement jusqu’à l’apparition d’un des événements suivants :
 
-La clé dynamométrique a été vérifiée au préalable avec des charges de valeur connue et donnait des lectures jugées très précises.
+- rupture de l’adhésif ou de l’interface ;
+- rupture ou délamination du PETG imprimé ;
+- déformation permanente de l’éprouvette ;
+- glissement de l’éprouvette ou de la douille empêchant de poursuivre l’essai de manière valide.
 
-Les résultats sont exprimés sous forme de **couple en N·m**.
+L’instrument conserve la valeur maximale atteinte pendant chaque chargement.
+
+Avant les essais, la réponse de l’instrument a été vérifiée à l’aide de charges de valeur connue et s’est révélée très proche des valeurs attendues. Cette vérification constituait une **vérification fonctionnelle interne** et non un étalonnage traçable.
+
+Les résultats sont exprimés sous forme de **couple appliqué en N·m**. Ils ne sont pas convertis en contrainte de cisaillement de l’adhésif, puisque la géométrie du joint et la distribution des contraintes sont spécifiques à l’application et ne correspondent pas à un essai de cisaillement uniforme normalisé.
 
 ## Critères observés
 
 Le couple maximal n'est pas le seul critère utilisé.
 
-Le **mode de rupture** est également observé :
+Le **mode de rupture** est également observé visuellement après l’essai :
 
-- rupture de l’adhésif ;
+- rupture de l’adhésif ou de la ligne de collage ;
 - décollement de l’interface ;
-- fissuration ou délamination du PETG ;
+- fissuration du PETG ;
+- délamination inter-couches du PETG ;
 - rupture du PETG ;
-- déformation ou glissement de l'éprouvette dans la douille avant rupture du joint.
+- déformation permanente de l’éprouvette ;
+- glissement de l’éprouvette ou de la douille.
 
-Lorsque le PETG ou le montage d'essai devient le maillon faible, la valeur obtenue devient une **borne inférieure de la résistance réelle du joint**, plutôt qu'une mesure de sa rupture.
+Lorsque le PETG ou le montage d'essai devient le maillon faible avant la rupture du joint, la valeur obtenue est considérée comme une **borne inférieure de la résistance réelle du joint** et est rapportée avec le symbole « > ».
 
 ---
 
@@ -124,7 +145,7 @@ Lorsque le PETG ou le montage d'essai devient le maillon faible, la valeur obten
 | **Gorilla polyuréthane** | **5,4 N·m** | **3,0 N·m** | Rupture de l’adhésif |
 | **Titebond III** | **9,8 N·m** | **7,0 N·m** | Rupture nette de l’adhésif |
 | **JB Weld** | **16,1 N·m** | **11,8 N·m** | Début de rupture/délamination du PETG ; variabilité |
-| **System Three Quick Cure 5** | **18,6 N·m** | **12,8 N·m** | À 18,6 N·m, le PETG casse avant la adhésif ; l'autre joint cède |
+| **System Three Quick Cure 5** | **18,6 N·m** | **12,8 N·m** | À 18,6 N·m, le PETG casse avant l’adhésif ; l'autre joint cède |
 | **CA régulier (CAR)** | **> 20,4 N·m** | **> 20,5 N·m** | Aucune rupture du joint ; limite imposée par le PETG ou le montage |
 | **CA épais (CAE)** | **> 20,9 N·m** | **> 20,8 N·m** | Aucune rupture du joint ; limite imposée par le PETG ou le montage |
 
@@ -135,7 +156,7 @@ Résultats :
 - **5,4 N·m**
 - **3,0 N·m**
 
-La rupture se produit dans la adhésif elle-même.
+La rupture se produit dans l’adhésif lui-même.
 
 Le PETG demeure pratiquement intact, ce qui indique que l'adhésif est clairement le maillon faible.
 
@@ -249,7 +270,7 @@ Les essais établissent ainsi que, pour la géométrie, le PETG, la préparation
 
 Le passage d’une rupture de l’adhésif à une déformation, une délamination ou une rupture du PETG est particulièrement significatif. Dans la littérature sur les assemblages de pièces imprimées, une rupture de l’adhérent peut survenir lorsque la résistance de l’interface de collage excède la résistance inter-couches de la pièce imprimée [[4]](#ref-4). Cette interprétation est compatible avec les observations faites ici pour les CA et, sur un des essais, pour le System Three Quick Cure 5.
 
-Ce comportement est aussi cohérent avec la nature anisotrope des pièces fabriquées par dépôt de matière fondue (*Fused Deposition Modeling*, FDM). Les études consacrées au PETG montrent que la microstructure produite par dépôt couche par couche, l’orientation des filaments et la qualité des interfaces inter-couches modifient la réponse mécanique et peuvent favoriser la délamination [[1](#ref-1)–[3](#ref-3)]. Ainsi, lorsqu’une éprouvette se déforme ou se délamine avant le joint, l’essai ne caractérise plus seulement l’adhésif : il devient aussi un essai de la pièce imprimée et de la géométrie de serrage.
+Ce comportement est aussi cohérent avec la nature anisotrope des pièces fabriquées par dépôt de matière fondue (*Fused Deposition Modeling*, FDM). Les études consacrées au PETG montrent que la microstructure produite par dépôt couche par couche, l’orientation des filaments et la qualité des interfaces inter-couches modifient la réponse mécanique et peuvent favoriser la délamination [[1](#ref-1), [2](#ref-2), [3](#ref-3)]. Ainsi, lorsqu’une éprouvette se déforme ou se délamine avant le joint, l’essai ne caractérise plus seulement l’adhésif : il devient aussi un essai de la pièce imprimée et de la géométrie de serrage.
 
 ## Mise en perspective avec la littérature
 
@@ -283,7 +304,8 @@ Plusieurs limites doivent être conservées à l’esprit :
 - le protocole n’est pas un essai normalisé de type *American Society for Testing and Materials* (ASTM) D3163 ;
 - la géométrie et le mode de chargement sont volontairement spécifiques à l’application Amavia ;
 - les quatre essais CA sont **censurés par la limite du PETG ou du montage**, et non par rupture du joint ;
-- aucune incertitude instrumentale formelle ni dispersion statistique robuste n’a été calculée ;
+- la clé dynamométrique comporte une exactitude annoncée de ±1 %, mais aucun certificat d’étalonnage traçable ni spécification complète d’incertitude n’était disponible, et l’incertitude de mesure n’a pas été propagée formellement ;
+- deux géométries de prise ont été utilisées pendant cette série préliminaire ;
 - la résistance à l’eau, au vieillissement, aux cycles thermiques et aux ouvertures/fermetures répétées n’est pas encore caractérisée ;
 - la formulation exacte des cyanoacrylates Adhaero n’est pas documentée et pourrait varier avec l’approvisionnement.
 
@@ -366,9 +388,11 @@ Les deux **cyanoacrylates**, régulier et épais, constituent le résultat princ
 
 La littérature disponible confirme que la performance des joints sur pièces imprimées dépend fortement de la famille d’adhésif, des paramètres d’impression et du mode de rupture [[1](#ref-1), [2](#ref-2), [3](#ref-3), [4](#ref-4), [5](#ref-5)]. Elle fournit également des précédents où le cyanoacrylate surpasse l’époxy sur d’autres polymères FDM [[5]](#ref-5), sans toutefois permettre de généraliser ce résultat à tous les PETG ou à tous les produits commerciaux.
 
-Pour l’application Amavia, le **cyanoacrylate épais** est retenu non parce qu’il a démontré une résistance supérieure au CA régulier (ce que le montage actuel ne permet pas d’établir (mais parce qu’il combine une résistance supérieure à la capacité mesurable de l’essai avec une viscosité et un temps de travail plus favorables à la réalisation d’un joint circulaire continu.
+Pour l’application Amavia, le **cyanoacrylate épais** est retenu non parce qu’il a démontré une résistance supérieure au CA régulier (ce que le montage actuel ne permet pas d’établir), mais parce qu’il combine une résistance supérieure à la capacité mesurable de l’essai avec une viscosité et un temps de travail plus favorables à la réalisation d’un joint circulaire continu.
 
 La validation n’est pas complète tant que la tenue à l’immersion, au vieillissement et aux cycles répétés de torsion n’a pas été mesurée. Le prochain jalon expérimental est donc l’essai d’étanchéité et de durabilité du boîtier assemblé.
+
+Les fichiers de projet et le matériel complémentaire sont maintenus dans le dépôt public **Mostly Intentional Design Labs / petg-adhesive-study**. Le fichier STL original de l’éprouvette est disponible sous `supplementary/stl/adhesive-test-specimen.stl`. D’autres éléments complémentaires, notamment un dessin coté dérivé de cette géométrie, des photographies des essais, des photographies des emballages d’adhésifs et des données expérimentales supplémentaires, pourront y être ajoutés.
 
 ---
 
