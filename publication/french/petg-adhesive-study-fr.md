@@ -13,7 +13,7 @@ Cette étude comparative évalue la performance de six adhésifs pour l’assemb
 
 ## Introduction
 
-L’assemblage par adhésif de pièces issues de fabrication additive constitue un problème distinct de celui des polymères moulés, car la structure couche par couche introduit une anisotropie (propriété qui dépend de la direction dans laquelle on la mesure), une porosité interne et des interfaces inter-couches susceptibles de devenir les éléments limitants du joint. Des travaux consacrés au PETG imprimé par extrusion montrent notamment que les paramètres de fabrication — orientation du raster, largeur d’extrusion, hauteur de couche et qualité des liaisons inter-couches — influencent fortement la rigidité, la résistance et les modes de rupture des pièces [[1](#ref-1), [2](#ref-2), [3](#ref-3)].
+L’assemblage par adhésif de pièces issues de fabrication additive constitue un problème distinct de celui des polymères moulés, car la structure couche par couche introduit une anisotropie (propriété qui dépend de la direction dans laquelle on la mesure), une porosité interne et des interfaces inter-couches susceptibles de devenir les éléments limitants du joint. Des travaux consacrés au PETG imprimé par extrusion montrent notamment que les paramètres de fabrication (orientation du raster, largeur d’extrusion, hauteur de couche et qualité des liaisons inter-couches (influencent fortement la rigidité, la résistance et les modes de rupture des pièces [[1](#ref-1), [2](#ref-2), [3](#ref-3)].
 
 Le comportement d’un joint ne dépend par ailleurs pas uniquement de la résistance nominale de l’adhésif. La compatibilité adhésif–substrat, la rigidité relative des deux matériaux, l’épaisseur de la ligne de collage, la géométrie du joint et la préparation de surface peuvent modifier à la fois la charge ultime et le mode de rupture. Une étude récente comparant plusieurs familles d’adhésifs sur des thermoplastiques imprimés, dont le PETG, conclut que le **type d’adhésif** est le facteur dominant de la résistance du joint parmi les variables étudiées [[4]](#ref-4). D’autres travaux spécifiques aux assemblages PETG imprimés confirment que les paramètres d’impression et l’épaisseur de l’adhésif influencent significativement la résistance et le comportement de rupture des joints [[1](#ref-1), [2](#ref-2)].
 
@@ -47,8 +47,8 @@ Six produits ou familles d’adhésifs ont été comparés :
 |---|---|---|
 | **JB Weld** | Époxy bicomposant | **J-B Weld Company, LLC** (Marietta, Georgia, États-Unis) |
 | **Gorilla Polyurethane** | Adhésif polyuréthane | **The Gorilla Glue Company** (Cincinnati, Ohio, États-Unis) |
-| **Cyanoacrylate épais** | CA visqueux, produit bon marché provenant de Dollarama | **Adhaero** — manufacturier réel non identifié avec certitude ; produit commercialisé chez Dollarama. **Dollarama Inc.** (Montréal, Québec, Canada) est indiqué ici comme détaillant/distributeur, et non comme manufacturier confirmé. |
-| **Cyanoacrylate régulier** | CA liquide, même marque que le CA épais | **Adhaero** — manufacturier réel non identifié avec certitude ; produit commercialisé chez Dollarama. **Dollarama Inc.** (Montréal, Québec, Canada) est indiqué ici comme détaillant/distributeur, et non comme manufacturier confirmé. |
+| **Cyanoacrylate épais** | CA visqueux, produit bon marché provenant de Dollarama | **Adhaero** (manufacturier réel non identifié avec certitude ; produit commercialisé chez Dollarama. **Dollarama Inc.** (Montréal, Québec, Canada) est indiqué ici comme détaillant/distributeur, et non comme manufacturier confirmé. |
+| **Cyanoacrylate régulier** | CA liquide, même marque que le CA épais | **Adhaero** (manufacturier réel non identifié avec certitude ; produit commercialisé chez Dollarama. **Dollarama Inc.** (Montréal, Québec, Canada) est indiqué ici comme détaillant/distributeur, et non comme manufacturier confirmé. |
 | **Titebond III** | Adhésif à bois résistant à l'eau | **Franklin International, Inc.** (Columbus, Ohio, États-Unis) |
 | **System Three Quick Cure 5** | Époxy à prise rapide, 5 minutes | **System Three Resins, Inc.** (Lacey, Washington, États-Unis) |
 
@@ -350,7 +350,7 @@ Les deux **cyanoacrylates**, régulier et épais, constituent le résultat princ
 
 La littérature disponible confirme que la performance des joints sur pièces imprimées dépend fortement de la famille d’adhésif, des paramètres d’impression et du mode de rupture [[1](#ref-1), [2](#ref-2), [3](#ref-3), [4](#ref-4), [5](#ref-5)]. Elle fournit également des précédents où le cyanoacrylate surpasse l’époxy sur d’autres polymères FDM [[5]](#ref-5), sans toutefois permettre de généraliser ce résultat à tous les PETG ou à tous les produits commerciaux.
 
-Pour l’application Amavia, le **cyanoacrylate épais** est retenu non parce qu’il a démontré une résistance supérieure au CA régulier — ce que le montage actuel ne permet pas d’établir — mais parce qu’il combine une résistance supérieure à la capacité mesurable de l’essai avec une viscosité et un temps de travail plus favorables à la réalisation d’un joint circulaire continu.
+Pour l’application Amavia, le **cyanoacrylate épais** est retenu non parce qu’il a démontré une résistance supérieure au CA régulier (ce que le montage actuel ne permet pas d’établir (mais parce qu’il combine une résistance supérieure à la capacité mesurable de l’essai avec une viscosité et un temps de travail plus favorables à la réalisation d’un joint circulaire continu.
 
 La validation n’est pas complète tant que la tenue à l’immersion, au vieillissement et aux cycles répétés de torsion n’a pas été mesurée. Le prochain jalon expérimental est donc l’essai d’étanchéité et de durabilité du boîtier assemblé.
 
