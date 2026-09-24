@@ -58,7 +58,9 @@ Specimens were produced on an **Original Prusa i3 MK3** using the default Prusa 
 | Top solid layers | 6 |
 | Bottom solid layers | 6 |
 
-<!-- TODO: Document slicer software and version, exact Prusa PETG profile name/version, infill pattern, print speed if known, extrusion width if known, cooling settings if known, and specimen print orientation. -->
+The specimens were printed with the **bonding interface directly on the build plate**, so the bonded face corresponds to the first-layer surface.
+
+<!-- TODO: Document slicer software and version, exact Prusa PETG profile name/version, infill pattern, print speed if known, extrusion width if known, and cooling settings if known. -->
 
 ### 2.4 Adhesives Evaluated
 
@@ -90,12 +92,13 @@ Early specimens used a square drive feature. Later specimens used a hexagonal dr
 
 ### 2.6 Surface Preparation and Bonding Procedure
 
-The same general bonding objective was used for all adhesive systems, but the exact preparation procedure for the test specimens is still being reconstructed from laboratory notes and photographs.
+For all adhesive systems, both mating surfaces were abraded and then cleaned with **99 % isopropyl alcohol** before bonding. The exact abrasive grit sequence is still being documented.
+
+After adhesive application and assembly, the specimens were **lightly pressed together** during the initial bonding period. All bonded specimens were allowed to cure for **13 days before mechanical testing**.
 
 <!-- TODO: Document exact abrasive grit sequence used on the test specimens. -->
-<!-- TODO: Confirm whether both mating surfaces were abraded for every adhesive. -->
-<!-- TODO: Confirm cleaning solvent and cleaning procedure for every test specimen. -->
-<!-- TODO: Document adhesive quantity or application method, whether adhesive was applied to one or both surfaces, clamping method, cure time, cure temperature, and elapsed time from bonding to testing. -->
+<!-- TODO: Document adhesive quantity or application method and confirm whether adhesive was applied to one or both mating surfaces for each adhesive system. -->
+<!-- TODO: Document cure temperature and storage conditions during the 13-day curing period. -->
 
 For the subsequent full-scale application part, both mating surfaces were sanded with multiple abrasive grades, cleaned with 99 % isopropyl alcohol, coated with thick CA, and assembled while ensuring continuous adhesive coverage around the circumference. These application-part observations are not used as substitute data for the specimen preparation procedure and will be separated from the final specimen method description.
 
@@ -209,7 +212,7 @@ The following limitations define the scope of the current Technical Note:
 2. no statistical inference, repeatability estimate, or population-level strength ranking is possible;
 3. two fixture geometries were used during the preliminary series;
 4. the CA tests were limited by the PETG specimen or fixture rather than bond failure;
-5. several specimen-preparation details still require formal documentation before submission;
+5. the exact abrasive grit sequence, adhesive application details, and curing environment still require formal documentation before submission;
 6. instrument uncertainty has not yet been formally propagated;
 7. immersion, environmental aging, thermal cycling, and repeated torsional cycling have not yet been evaluated;
 8. the exact manufacturer formulation of the Adhaero CA products is not publicly documented and may vary with supply.
@@ -228,7 +231,7 @@ The data do not establish statistically significant differences between adhesive
 
 Thick CA was selected for subsequent full-scale watertight assembly trials because it combined a lower-bound torsional capacity above 20 N·m with better handling and positioning characteristics than the low-viscosity CA.
 
-Further work will document specimen preparation in full, incorporate the specimen STL geometry as supplementary material, increase replication, improve the fixture, and evaluate immersion and repeated torsional cycling.
+Further work will complete documentation of the abrasive preparation and adhesive application procedure, incorporate the specimen STL geometry as supplementary material, increase replication, improve the fixture, and evaluate immersion and repeated torsional cycling.
 
 ## Data and Supplementary Materials
 
