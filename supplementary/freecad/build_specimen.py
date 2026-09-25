@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[2]
 STL = ROOT / "supplementary/stl/adhesive-test-specimen.stl"
 FCSTD = ROOT / "supplementary/freecad/specimen-reconstruction.FCStd"
 SVG = ROOT / "media/figures/specimen-freecad-candidate.svg"
+STL_OUT = ROOT / "supplementary/freecad/specimen-reconstruction.stl"
 TEMPLATE = Path(__file__).with_name("specimen-sheet-template.svg")
 
 # Nominal sections inferred from the STL (millimetres).
@@ -28,7 +29,7 @@ TOTAL_HEIGHT = 13.0
 HEX_ACROSS_FLATS = 21.0
 HEX_RADIUS = HEX_ACROSS_FLATS / math.sqrt(3.0)
 HEX_ANGLE = math.atan2(-0.21775, 12.1224)
-BONDING_GAP = 3.0
+BONDING_GAP = 6.0
 V = App.Vector
 
 
@@ -57,27 +58,55 @@ base.Label = "01  Circular base — Ø25 × 3 mm"
 base.Radius = BASE_RADIUS
 base.Height = BASE_HEIGHT
 
-round_section = doc.addObject("Sketcher::SketchObject", "RoundSection")
-round_section.Label = "02  Round transition section — z = 3 mm"
-round_section.Placement.Base.z = BASE_HEIGHT
-round_section.addGeometry(Part.Circle(V(), V(0, 0, 1), BASE_RADIUS), False)
-
 hex_section = doc.addObject("Sketcher::SketchObject", "HexSection")
-hex_section.Label = "03  Hex transition section — z = 4.5 mm"
+hex_section.Label = "02  Hex section — z = 4.5 mm"
 hex_section.Placement.Base.z = BASE_HEIGHT + TRANSITION_HEIGHT
 corners = [V(HEX_RADIUS * math.cos(HEX_ANGLE + i * math.pi / 3),
              HEX_RADIUS * math.sin(HEX_ANGLE + i * math.pi / 3), 0) for i in range(6)]
 for i in range(6):
     hex_section.addGeometry(Part.LineSegment(corners[i], corners[(i + 1) % 6]), False)
 
-transition = doc.addObject("Part::Loft", "Transition")
-transition.Label = "04  Ruled round-to-hex transition — 1.5 mm"
-transition.Sections = [round_section, hex_section]
-transition.Solid = True
-transition.Ruled = True
+# The source mesh's intermediate sections follow a quarter-circle of radius
+# 1.5 mm at each of the six hex flats. Cut that rounded envelope from a
+# Ø25 mm cylinder; the base below z=3 stays circular.
+transition_envelope = doc.addObject("Part::Cylinder", "TransitionEnvelope")
+transition_envelope.Label = "03  Circular transition envelope — Ø25 × 1.5 mm"
+transition_envelope.Radius = BASE_RADIUS
+transition_envelope.Height = TRANSITION_HEIGHT
+transition_envelope.Placement.Base.z = BASE_HEIGHT
+
+flat_apothem = HEX_ACROSS_FLATS / 2
+fillet_radius = TRANSITION_HEIGHT
+center_r = flat_apothem + fillet_radius
+z_top = BASE_HEIGHT + TRANSITION_HEIGHT
+start = V(center_r, -30, BASE_HEIGHT)
+mid = V(center_r - fillet_radius / math.sqrt(2), -30,
+        z_top - fillet_radius / math.sqrt(2))
+end = V(flat_apothem, -30, z_top)
+arc = Part.Arc(start, mid, end).toShape()
+outer = [end, V(30, -30, z_top), V(30, -30, BASE_HEIGHT), start]
+profile = Part.Wire([arc] + [Part.makeLine(outer[i], outer[i + 1]) for i in range(3)])
+flat_cutter = Part.Face(profile).extrude(V(0, 60, 0))
+cutters = []
+for i in range(6):
+    cutter = flat_cutter.copy()
+    angle = HEX_ANGLE + math.pi / 6 + i * math.pi / 3
+    cutter.rotate(V(), V(0, 0, 1), math.degrees(angle))
+    cutters.append(cutter)
+fillet_tools = doc.addObject("Part::Feature", "RoundedFlatCutters")
+fillet_tools.Label = "04  Six rounded-flat cutters — R1.5 mm"
+fillet_tools.Shape = Part.makeCompound(cutters)
+fillet_tools.addProperty("App::PropertyLength", "FilletRadius", "Geometry")
+fillet_tools.FilletRadius = fillet_radius
+
+transition = doc.addObject("Part::Cut", "Transition")
+transition.Label = "05  Rounded circular-to-hex transition"
+transition.Base = transition_envelope
+transition.Tool = fillet_tools
+transition.Refine = True
 
 hex_drive = doc.addObject("Part::Extrusion", "HexDrive")
-hex_drive.Label = "05  Hex drive — 21 mm across flats"
+hex_drive.Label = "06  Hex drive — 21 mm across flats"
 hex_drive.Base = hex_section
 hex_drive.Dir = V(0, 0, TOTAL_HEIGHT - BASE_HEIGHT - TRANSITION_HEIGHT)
 hex_drive.Solid = True
@@ -89,33 +118,32 @@ specimen.Refine = True
 specimen.addProperty("App::PropertyString", "SourceSTL", "Provenance")
 specimen.SourceSTL = "supplementary/stl/adhesive-test-specimen.stl"
 specimen.addProperty("App::PropertyString", "Reconstruction", "Provenance")
-specimen.Reconstruction = "Nominal analytic reconstruction; transition approximated by a ruled loft. STL remains the source geometry."
+specimen.Reconstruction = "Analytic R1.5 rounded-flat transition inferred from STL sections. STL remains the source mesh."
 
 doc.recompute()
 if specimen.Shape.isNull() or not specimen.Shape.isValid() or len(specimen.Shape.Solids) != 1:
     raise RuntimeError("The reconstructed specimen is not one valid solid")
-# The BRep's conservative bounding box can include control-point overshoot;
-# tessellation gives the actual nominal outside envelope.
+# Verify the physical tessellated envelope of the rebuilt solid.
 vertices, _ = specimen.Shape.tessellate(0.03)
 assert max(math.hypot(p.x, p.y) for p in vertices) <= BASE_RADIUS + 0.001
 assert abs(max(p.z for p in vertices) - TOTAL_HEIGHT) < 0.001
 
-# Two editable links place their bonded faces at x = -1.5 and +1.5 mm.
+# Two editable links place their bonded faces 6 mm apart for a legible exploded view.
 left = doc.addObject("App::Link", "LeftSpecimen")
-left.Label = "Left specimen — bonded face at x = -1.5 mm"
+left.Label = f"Left specimen — bonded face at x = {-BONDING_GAP / 2:g} mm"
 left.setLink(specimen)
 left.Placement = App.Placement(V(-BONDING_GAP / 2, 0, 0), App.Rotation(V(0, 0, 1), V(-1, 0, 0)))
 right = doc.addObject("App::Link", "RightSpecimen")
-right.Label = "Right specimen — bonded face at x = +1.5 mm"
+right.Label = f"Right specimen — bonded face at x = {BONDING_GAP / 2:g} mm"
 right.setLink(specimen)
 right.Placement = App.Placement(V(BONDING_GAP / 2, 0, 0), App.Rotation(V(0, 0, 1), V(1, 0, 0)))
 assembly = doc.addObject("App::DocumentObjectGroup", "BondingArrangement")
-assembly.Label = "Bonding arrangement — 3 mm face-to-face gap"
+assembly.Label = f"Bonding arrangement — {BONDING_GAP:g} mm exploded gap"
 assembly.addObject(left)
 assembly.addObject(right)
 
 # Keep only the two placed links visible in the initial 3D view.
-for obj in (base, round_section, hex_section, transition, hex_drive, specimen):
+for obj in (base, hex_section, transition_envelope, fillet_tools, transition, hex_drive, specimen):
     obj.Visibility = False
 left.Visibility = True
 right.Visibility = True
@@ -143,9 +171,9 @@ def make_view(name, label, sources, direction, x, y, scale=2.8):
 
 
 side = make_view("SideView", "Side — single specimen", [specimen], (0, -1, 0), 95, 220)
-top = make_view("TopView", "Top — hex drive", [specimen], (0, 0, -1), 295, 220)
-bottom = make_view("BottomView", "Bottom — bonded face", [specimen], (0, 0, 1), 95, 95)
-projected = make_view("OpposedProjection", "Opposed pair — axonometric", [left, right], (1, -1, 1), 295, 95, 2.5)
+top = make_view("TopView", "Top — hex drive", [specimen], (0, 0, 1), 295, 220)
+bottom = make_view("BottomView", "Bottom — bonded face", [specimen], (0, 0, -1), 95, 95)
+projected = make_view("OpposedProjection", "Opposed pair — axonometric", [left, right], (0.35, -1, 0.7), 295, 95, 2.5)
 doc.recompute()
 for view in (side, top, bottom, projected):
     if view.getStatusString() != "Valid":
@@ -154,6 +182,7 @@ for view in (side, top, bottom, projected):
 FCSTD.parent.mkdir(parents=True, exist_ok=True)
 SVG.parent.mkdir(parents=True, exist_ok=True)
 doc.saveAs(str(FCSTD))
+specimen.Shape.exportStl(str(STL_OUT), 0.05)
 
 
 def view_svg(view, cx, cy, scale):
@@ -164,27 +193,24 @@ def view_svg(view, cx, cy, scale):
 
 
 panels = [
-    ("01 / SIDE", "Single specimen • circular base, transition and hex drive", side, 400, 320, 12.0),
-    ("02 / TOP", "Hex drive end • 21.0 mm across flats", top, 1200, 320, 12.0),
-    ("03 / BOTTOM", "Circular bonded face • nominal Ø25.0 mm", bottom, 400, 825, 12.0),
-    ("04 / OPPOSED PAIR", "Bonded faces facing • 3.0 mm clear gap before assembly", projected, 1200, 825, 11.0),
+    ("01 / SIDE", "Single specimen • circular base, transition and hex drive", side, 400, 245, 12.0),
+    ("02 / TOP", "Hex drive end • 21.0 mm across flats", top, 1200, 245, 12.0),
+    ("03 / BOTTOM", "Circular bonded face • nominal Ø25.0 mm", bottom, 400, 755, 12.0),
+    ("04 / OPPOSED PAIR", f"Bonded faces facing • {BONDING_GAP:g} mm exploded gap for clarity", projected, 1200, 755, 11.0),
 ]
-parts = ['<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120">',
-         '<rect width="1600" height="1120" fill="white"/>',
-         '<g font-family="Arial,Helvetica,sans-serif" fill="#17212b">',
-         '<text x="65" y="48" font-size="34" font-weight="700">PETG adhesive test specimen</text>',
-         '<text x="65" y="80" font-size="18">FreeCAD reconstruction from the supplied STL · review candidate · dimensions in mm</text>',
-         '</g>']
+parts = ['<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040">',
+         '<rect width="1600" height="1040" fill="white"/>']
 for i, (title, subtitle, view, cx, cy, scale) in enumerate(panels):
     x0 = 50 if i % 2 == 0 else 820
-    y0 = 110 if i < 2 else 600
+    y0 = 30 if i < 2 else 530
     parts += [f'<rect x="{x0}" y="{y0}" width="730" height="460" rx="10" fill="none" stroke="#bdc6ce" stroke-width="1.5"/>',
               f'<text x="{x0+26}" y="{y0+42}" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" fill="#17212b">{html.escape(title)}</text>',
               f'<text x="{x0+26}" y="{y0+72}" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#4d5966">{html.escape(subtitle)}</text>',
               view_svg(view, cx, cy, scale)]
-parts += ['<text x="65" y="1093" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#4d5966">Nominal reverse engineering: Ø25 × 3 base, 1.5 transition, 21 across flats, 13 overall. The STL mesh is the dimensional reference.</text>', '</svg>']
+parts.append('</svg>')
 SVG.write_text('\n'.join(parts))
 print('FreeCAD:', FCSTD)
 print('SVG:', SVG)
+print('STL:', STL_OUT)
 print('Solid volume:', round(specimen.Shape.Volume, 3), 'mm^3')
 print('Gap:', BONDING_GAP, 'mm')

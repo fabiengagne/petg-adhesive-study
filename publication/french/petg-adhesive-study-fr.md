@@ -99,9 +99,9 @@ Les premières éprouvettes possèdent une prise carrée. Les suivantes utilisen
 
 Le fichier STL original de l’éprouvette est disponible dans le dépôt à l’emplacement `supplementary/stl/adhesive-test-specimen.stl`.
 
-![Schéma dimensionnel de l’éprouvette](../../media/figures/specimen-dimensioned-fr.svg)
+![Géométrie de l’éprouvette et disposition de deux éprouvettes face à face](../../media/figures/specimen-freecad-candidate.svg)
 
-*Figure 1. Vues orthographiques cotées de l’éprouvette à entraînement hexagonal, avec le diamètre et la hauteur de la base indiqués sur la vue de côté. Dimensions dérivées du STL, en millimètres; vues non à l’échelle.*
+*Figure 1. Vues de côté, de dessus et de dessous de l’éprouvette à entraînement hexagonal, et projection de deux éprouvettes dont les faces de collage se font face. L’écartement de 6 mm dans la projection sert uniquement à distinguer les deux pièces avant assemblage. Les annotations de la figure sont en anglais.*
 
 ### Préparation des surfaces et collage des éprouvettes
 
