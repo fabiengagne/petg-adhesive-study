@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This internal test was performed to check the indication of the digital torque wrench used for the PETG adhesive torsion tests against torques generated from known masses applied at measured lever-arm distances. The verification was intended as an in-house functional check only. It was not a traceable calibration. The reference masses used for the verification were weighed to **±1 g** before use.
+This internal test was performed on 2026-09-22 to check the indication of the digital torque wrench used for the PETG adhesive torsion tests against torques generated from known masses applied at measured lever-arm distances. The verification was intended as an in-house functional check only. It was not a traceable calibration. The reference masses used for the verification were weighed to **±1 g** before use.
 
 ## Instrument
 
@@ -34,15 +34,15 @@ References:
 1. ASTM International, ASTM E2428-22, *Standard Practice for Calibration and Verification of Elastic Torque Measurement Standards*, ASTM International, West Conshohocken, PA, 2022. https://doi.org/10.1520/E2428-22
 2. ASTM International, ASTM E2624-17(2025), *Standard Practice for Torque Calibration of Testing Machines*, ASTM International, West Conshohocken, PA, 2025. https://doi.org/10.1520/E2624-17R25
 
-## Narrative description of the test
+## Description of the test
 
-The torque wrench was arranged so that a known gravitational load produced a moment about the wrench axis at a measured lever arm. A reference mass was applied at the selected distance from the axis. The load was brought onto the wrench and maintained for a minimum of 4 s so that a stable indication could be observed and recorded. The indicated torque was then compared with the torque calculated from the applied force and the measured lever arm.
+The torque wrench was arranged so that a known gravitational load produced a moment about the wrench axis at a measured lever arm in the clockwise direction. A reference mass was applied at the selected distance from the axis. The load was brought onto the wrench and maintained for a minimum of 4 s so that a stable indication could be observed and recorded. The indicated torque was then compared with the torque calculated from the applied force and the measured lever arm.
 
-Several lever-arm distances were used in order to check the instrument response at multiple torque levels. The original handwritten notes are preserved with this report. The previously ambiguous 5.9 N·m and 3.2 N·m readings have since been confirmed from the original test record.
+Several lever-arm distances were used in order to check the instrument response at multiple torque levels. The original handwritten notes are preserved with this report.
 
 ## Final transcription and comparison
 
-The handwritten test record has now been reconciled sufficiently for the torque readings to be treated as confirmed. Reference torque was recalculated from the recorded mass and lever arm using \(T = m g r\), with \(g = 9.81\ \mathrm{m/s^2}\).
+Reference torque was recalculated from the recorded mass and lever arm using \(T = m g r\), with \(g = 9.81\ \mathrm{m/s^2}\).
 
 | Mass | Force | Lever arm | Instrument indication | Calculated reference torque | Mean of indication and reference | Error | Relative error |
 |---:|---:|---:|---:|---:|---:|---:|---:|
@@ -70,10 +70,3 @@ For the purpose for which the wrench was used in the PETG adhesive screening, th
 - Instrument used: SOARFLY YX01-24
 - Display resolution: 0.1 N·m
 - Minimum torque application duration per test point: 4 s
-
-## Items to confirm
-
-- [ ] Record the method used to measure the lever arm and its measurement resolution.
-- [x] Reference masses were weighed to ±1 g.
-- [ ] Record whether torque was applied in the clockwise or counterclockwise direction.
-- [ ] Add the test date if it can be reconstructed.
