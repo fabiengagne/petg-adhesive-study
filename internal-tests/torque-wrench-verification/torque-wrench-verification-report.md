@@ -9,6 +9,7 @@ This internal test was performed on 2026-09-22 to check the indication of the di
 - **Instrument:** Digital torque wrench
 - **Brand:** SOARFLY
 - **Model:** YX01-24
+- **Serial number shown on the instrument:** SN:20260702093 ([photograph](../../media/photos/torque-wrench-serial.jpeg))
 - **Display resolution:** **0.1 N·m**
 - **Commercially stated accuracy:** ±1 % (no traceable calibration certificate available)
 - **Commercially stated maximum capacity:** 220 N·m
@@ -68,5 +69,6 @@ For the purpose for which the wrench was used in the PETG adhesive screening, th
 
 - Original handwritten test notes: `handwritten-notes.jpg`
 - Instrument used: SOARFLY YX01-24
+- Instrument serial number: SN:20260702093
 - Display resolution: 0.1 N·m
 - Minimum torque application duration per test point: 4 s

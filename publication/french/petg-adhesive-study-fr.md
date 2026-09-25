@@ -59,7 +59,7 @@ La Titebond III est incluse comme essai exploratoire. Elle n'est pas destinée a
 
 Les sièges sociaux des fabricants identifiés ont été vérifiés à partir de sources publiques des entreprises. Pour les cyanoacrylates **stuck**, les photographies confirment les désignations commerciales et leur vente chez Dollarama, mais ne permettent pas d'identifier de manière fiable l'entité manufacturière derrière le produit. Pour cette raison, **Dollarama Inc. (Montréal, Québec, Canada)** est mentionnée uniquement comme détaillant/distributeur. L'époxy à prise rapide a pu être identifié visuellement comme **System Three Quick Cure 5**, fabriqué par **System Three Resins, Inc.**
 
-Les photographies des contenants montrent les codes de sertissage ou d'emballage suivants : **250328** sur le tube Original Gorilla Glue Minis, **0526** sur le tube stuck Thick Gel Super Glue et **0326** sur le tube stuck Super Glue. Aucun libellé sur les emballages ne permet d'établir avec certitude qu'il s'agit de numéros de lot ou de dates d'expiration. Ils sont donc consignés uniquement comme **codes d'emballage visibles**. Aucun numéro de lot explicite ni date d'expiration n'est visible sur les contenants J-B Weld, Titebond III ou System Three photographiés. Les dates d'achat n'ont pas été consignées.
+Les photographies des contenants montrent les codes de sertissage ou d'emballage suivants : **250328** sur le tube Original Gorilla Glue Minis, **0526** sur le tube stuck Thick Gel Super Glue et **0326** sur le tube stuck Super Glue. Aucun libellé sur les emballages ne permet d'établir avec certitude qu'il s'agit de numéros de lot ou de dates d'expiration. Ils sont donc consignés uniquement comme **codes d'emballage visibles**. La [photographie des deux flacons System Three](../../media/photos/system-three-epoxy-bottles.jpeg) ne montre pas de numéro de lot lisible. Aucun numéro de lot explicite ni date d'expiration n'est visible sur les contenants J-B Weld ou Titebond III photographiés. Les dates d'achat n'ont pas été consignées.
 
 ---
 
@@ -67,11 +67,11 @@ Les photographies des contenants montrent les codes de sertissage ou d'emballage
 
 ## Matériau imprimé
 
-Les éprouvettes et les pièces d’application ont été fabriquées en **OVERTURE PETG Rock White, diamètre 1,75 mm**, commercialisé par **Overture 3D Technologies, LLC** (10777 Westheimer Rd, Suite 159, Houston, Texas 77042, États-Unis).
+Les éprouvettes et les pièces d’application ont été fabriquées en **OVERTURE PETG Rock White, diamètre 1,75 mm**, commercialisé par **Overture 3D Technologies, LLC** (10777 Westheimer Rd, Suite 159, Houston, Texas 77042, États-Unis). L’[étiquette de la bobine photographiée](../../media/photos/petg-filament-lot.jpeg) porte le **numéro de lot 16033**.
 
 ## Paramètres d’impression
 
-Les éprouvettes ont été imprimées sur une **Original Prusa i3 MK3** en utilisant le profil Prusa par défaut pour filament PETG, avec les paramètres suivants :
+Les éprouvettes ont été imprimées sur une **Original Prusa i3 MK3** en utilisant le profil Prusa par défaut pour filament PETG, avec les paramètres suivants. Les fichiers d’impression des éprouvettes ont été préparés avec **PrusaSlicer 2.9.6**, version confirmée par le chercheur et visible sur la [photographie du raccourci](../../media/photos/prusaslicer-version.jpeg).
 
 - diamètre de la buse : **0,4 mm** ;
 - température de la buse : **250 °C** ;
@@ -111,7 +111,7 @@ Après application de l’adhésif et assemblage, les éprouvettes ont été **p
 
 ## Instrumentation
 
-Le couple est mesuré à l'aide d'une **clé dynamométrique numérique SOARFLY, modèle YX01-24** (*Digital Torque Wrench*), dont l’affichage a une résolution de **0,1 N·m**. La fiche commerciale indique une capacité maximale de **220 N·m** et une exactitude annoncée de **±1 %**. Cette dernière valeur est une spécification du vendeur, et non une exactitude démontrée pour les présentes mesures.
+Le couple est mesuré à l'aide d'une **clé dynamométrique numérique SOARFLY, modèle YX01-24, numéro de série SN:20260702093** ([photographie](../../media/photos/torque-wrench-serial.jpeg); *Digital Torque Wrench*), dont l’affichage a une résolution de **0,1 N·m**. La fiche commerciale indique une capacité maximale de **220 N·m** et une exactitude annoncée de **±1 %**. Cette dernière valeur est une spécification du vendeur, et non une exactitude démontrée pour les présentes mesures.
 
 Avant les essais, une **vérification fonctionnelle interne** a été effectuée avec des masses connues et des bras de levier mesurés, dans le sens horaire. Aux cinq points vérifiés, d’environ **3 à 15 N·m**, l’écart relatif maximal observé était de **2,92 %**. Cette vérification appuie l’usage comparatif de la clé, mais ne constitue pas un étalonnage traçable et ne démontre pas l’exactitude annoncée de ±1 %. Le rapport final de vérification est conservé sous `internal-tests/torque-wrench-verification/torque-wrench-verification-report.md`.
 
