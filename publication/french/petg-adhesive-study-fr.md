@@ -5,7 +5,7 @@
 
 ## Résumé
 
-Cette étude comparative évalue la performance de six adhésifs pour l’assemblage de pièces imprimées en PETG destinées à une application marine, soit les boîtiers des bouées autonomes du projet [Amavia](https://github.com/fabiengagne/Amavia). Les adhésifs examinés sont un époxy JB Weld, un époxy à prise rapide de 5 minutes, un adhésif polyuréthane Gorilla, un adhésif à bois Titebond III, ainsi que deux cyanoacrylates (CA) de viscosités différentes, régulier et épais. Deux assemblages collés par adhésif, chacun formé de deux pièces imprimées, ont été soumis à un chargement en torsion reproduisant le type de sollicitation attendu sur le col fileté du compartiment batterie. Le couple maximal ainsi que le mode de rupture ont été consignés. Les adhésifs polyuréthane et Titebond III ont présenté les résistances les plus faibles, avec rupture principalement dans l’adhésif. Les époxys ont offert de meilleures performances, mais avec une variabilité notable entre les éprouvettes. Les cyanoacrylates ont fourni les meilleurs résultats : aucun des quatre essais n’a entraîné de rupture du joint. Les résistances observées sont donc rapportées comme des bornes inférieures (> 20,4 N·m), la déformation ou la rupture du PETG et du montage d’essai devenant alors le facteur limitant. Le cyanoacrylate épais a été retenu pour l’application finale en raison de sa résistance mécanique, de son temps de travail supérieur à celui du CA liquide et de sa viscosité mieux adaptée à l’obtention d’un joint continu. Un essai d’étanchéité en immersion est prévu afin de compléter la validation pour l’usage réel.
+Cette étude comparative évalue la performance de six adhésifs pour l’assemblage de pièces imprimées en PETG destinées à une application marine, soit les boîtiers des bouées autonomes du projet [Amavia](https://github.com/fabiengagne/Amavia). Les adhésifs examinés sont un époxy JB Weld, un époxy à prise rapide de 5 minutes, un adhésif polyuréthane Gorilla, un adhésif à bois Titebond III, ainsi que deux cyanoacrylates (CA) de viscosités différentes, régulier et épais. Deux assemblages collés par adhésif, chacun formé de deux pièces imprimées, ont été soumis à un chargement en torsion reproduisant le type de sollicitation attendu sur le col fileté du compartiment batterie. Le couple maximal ainsi que le mode de rupture ont été consignés. Les adhésifs polyuréthane et Titebond III ont présenté les résistances les plus faibles, avec rupture principalement dans l’adhésif. Les époxys ont offert de meilleures performances, mais avec une variabilité notable entre les éprouvettes. Les cyanoacrylates ont fourni les meilleurs résultats : aucun des quatre essais n’a entraîné de rupture du joint. Les résistances observées sont donc rapportées comme des bornes inférieures (> 20,4 N·m), le PETG atteignant sa limite avant le joint dans chacun des quatre essais. Le cyanoacrylate épais a été retenu pour l’application finale en raison de sa résistance mécanique, de son temps de travail supérieur à celui du CA liquide et de sa viscosité mieux adaptée à l’obtention d’un joint continu. Un essai d’étanchéité en immersion est prévu afin de compléter la validation pour l’usage réel.
 
 **Mots-clés :** PETG, adhésif, collage, cyanoacrylate, époxy, torsion, impression 3D, étanchéité, Amavia.
 
@@ -120,7 +120,6 @@ L’éprouvette est maintenue dans un étau par sa géométrie de prise ou par u
 - rupture de l’adhésif ou de l’interface ;
 - rupture ou délamination du PETG imprimé ;
 - déformation permanente de l’éprouvette ;
-- glissement de l’éprouvette ou de la douille empêchant de poursuivre l’essai de manière valide.
 
 L’instrument conserve la valeur maximale atteinte pendant chaque chargement.
 
@@ -138,9 +137,8 @@ Le **mode de rupture** est également observé visuellement après l’essai :
 - délamination inter-couches du PETG ;
 - rupture du PETG ;
 - déformation permanente de l’éprouvette ;
-- glissement de l’éprouvette ou de la douille.
 
-Lorsque le PETG ou le montage d'essai devient le maillon faible avant la rupture du joint, la valeur obtenue est considérée comme une **borne inférieure de la résistance réelle du joint** et est rapportée avec le symbole « > ».
+Lorsque le PETG atteint sa limite avant la rupture du joint, la valeur obtenue est considérée comme une **borne inférieure de la résistance réelle du joint** et est rapportée avec le symbole « > ».
 
 ## Déclaration d’utilisation de l’intelligence artificielle
 
@@ -156,8 +154,8 @@ OpenAI Codex a été utilisé pour aider à réviser la rédaction du manuscrit,
 | **Titebond III** | **9,8 N·m** | **7,0 N·m** | Rupture nette de l’adhésif |
 | **JB Weld** | **16,1 N·m** | **11,8 N·m** | Début de rupture/délamination du PETG ; variabilité |
 | **System Three Quick Cure 5** | **18,6 N·m** | **12,8 N·m** | À 18,6 N·m, le PETG casse avant l’adhésif ; l'autre joint cède |
-| **CA régulier (CAR)** | **> 20,4 N·m** | **> 20,5 N·m** | Aucune rupture du joint ; limite imposée par le PETG ou le montage |
-| **CA épais (CAE)** | **> 20,9 N·m** | **> 20,8 N·m** | Aucune rupture du joint ; limite imposée par le PETG ou le montage |
+| **CA régulier (CAR)** | **> 20,4 N·m** | **> 20,5 N·m** | Aucune rupture du joint ; limite imposée par le PETG |
+| **CA épais (CAE)** | **> 20,9 N·m** | **> 20,8 N·m** | Aucune rupture du joint ; limite imposée par le PETG |
 
 ## Gorilla polyuréthane
 
@@ -232,7 +230,7 @@ Résultats :
 
 Aucune rupture du joint n’a été observée lors des deux essais.
 
-Dans les deux cas, la limite de l’essai a été imposée par le PETG ou par le montage : délamination locale, déformation de l’éprouvette et/ou rotation dans la douille.
+Dans les deux cas, le PETG a atteint sa limite avant la rupture du joint.
 
 Il n’est donc pas approprié de calculer une moyenne de rupture pour le CA régulier. Les valeurs mesurées doivent être interprétées comme des **bornes inférieures** de la résistance du joint.
 
@@ -249,7 +247,7 @@ Résultats :
 
 Aucune rupture du joint n’a été observée lors des deux essais.
 
-Comme pour le CA régulier, le PETG ou le montage d’essai a atteint sa limite avant l’adhésif. Les valeurs mesurées constituent donc des **bornes inférieures** et non des couples de rupture.
+Comme pour le CA régulier, le PETG a atteint sa limite avant la rupture du joint. Les valeurs mesurées constituent donc des **bornes inférieures** et non des couples de rupture.
 
 **Résistance du joint CA épais : > 20,8–20,9 N·m dans les conditions de cet essai.**
 
@@ -294,7 +292,7 @@ Troisièmement, Yap *et al.* ont observé, sur deux autres polymères imprimés,
 
 ## Cyanoacrylate régulier et cyanoacrylate épais
 
-Le présent protocole ne permet pas de distinguer mécaniquement les deux CA : les quatre éprouvettes ont dépassé la capacité utile du montage sans rupture du joint. Le choix du **CA épais** repose donc principalement sur des considérations de mise en œuvre plutôt que sur une différence de résistance démontrée.
+Le présent protocole ne permet pas de distinguer mécaniquement les deux CA : les quatre éprouvettes ont atteint la limite du PETG sans rupture du joint. Le choix du **CA épais** repose donc principalement sur des considérations de mise en œuvre plutôt que sur une différence de résistance démontrée.
 
 Le CA régulier polymérise très rapidement et sa faible viscosité complique le contrôle d’un joint circulaire de grande dimension. Le CA épais offre, dans l’expérience réalisée, environ **1 à 2 minutes de temps de travail**, permet un repositionnement et facilite l’observation d’une couverture continue. Pour le col du compartiment batterie, ces caractéristiques réduisent le risque pratique de laisser une zone insuffisamment mouillée.
 
@@ -313,13 +311,13 @@ Plusieurs limites doivent être conservées à l’esprit :
 - seulement **deux assemblages par adhésif** ont été testés ;
 - le protocole n’est pas un essai normalisé de type *American Society for Testing and Materials* (ASTM) D3163 ;
 - la géométrie et le mode de chargement sont volontairement spécifiques à l’application Amavia ;
-- les quatre essais CA sont **censurés par la limite du PETG ou du montage**, et non par rupture du joint ;
+- les quatre essais CA sont **censurés par la limite du PETG**, et non par rupture du joint ;
 - la vérification fonctionnelle de la clé couvrait environ 3 à 15 N·m, en deçà des couples les plus élevés de cette étude ; elle ne constitue pas un étalonnage traçable, l’incertitude de mesure n’a pas été évaluée formellement et la vitesse d’application du couple aux éprouvettes n’a pas été mesurée ;
 - deux géométries de prise ont été utilisées pendant cette série préliminaire ;
 - la résistance à l’eau, au vieillissement, aux cycles thermiques et aux ouvertures/fermetures répétées n’est pas encore caractérisée ;
 - la formulation exacte des cyanoacrylates stuck n’est pas documentée et pourrait varier avec l’approvisionnement.
 
-Un travail ultérieur pourrait utiliser davantage d’éprouvettes, un montage capable de dépasser 21 N·m sans glissement ni déformation parasite, et un protocole normalisé de cisaillement en recouvrement en complément du présent essai applicatif. Des essais après immersion et après cyclage mécanique seraient particulièrement pertinents pour l’usage marin visé.
+Un travail ultérieur pourrait utiliser davantage d’éprouvettes, une géométrie d’éprouvette et un mode de chargement permettant de solliciter les joints CA jusqu’à leur rupture sans défaillance préalable du PETG, et un protocole normalisé de cisaillement en recouvrement en complément du présent essai applicatif. Des essais après immersion et après cyclage mécanique seraient particulièrement pertinents pour l’usage marin visé.
 
 ---
 
@@ -394,11 +392,11 @@ L'objectif sera de vérifier que l'excellente résistance mécanique observée l
 
 Dans les conditions spécifiques de cet essai, les six adhésifs présentent des comportements nettement différents. Le **Gorilla polyuréthane** et le **Titebond III** atteignent les plus faibles couples avant rupture du joint. Les deux époxys offrent des performances sensiblement supérieures, mais avec une dispersion notable entre les deux éprouvettes.
 
-Les deux **cyanoacrylates**, régulier et épais, constituent le résultat principal de l’étude : **aucun des quatre joints n’a rompu**. Les valeurs CAR-A > 20,4 N·m, CAR-B > 20,5 N·m, CAE-A > 20,9 N·m et CAE-B > 20,8 N·m doivent donc être considérées comme des bornes inférieures. À ces niveaux, le PETG ou le montage devient le facteur limitant.
+Les deux **cyanoacrylates**, régulier et épais, constituent le résultat principal de l’étude : **aucun des quatre joints n’a rompu**. Les valeurs CAR-A > 20,4 N·m, CAR-B > 20,5 N·m, CAE-A > 20,9 N·m et CAE-B > 20,8 N·m doivent donc être considérées comme des bornes inférieures. À ces niveaux, le PETG devient le facteur limitant dans les quatre essais.
 
 La littérature disponible confirme que la performance des joints sur pièces imprimées dépend fortement de la famille d’adhésif, des paramètres d’impression et du mode de rupture [[1](#ref-1), [2](#ref-2), [3](#ref-3), [4](#ref-4), [5](#ref-5)]. Elle fournit également des précédents où le cyanoacrylate surpasse l’époxy sur d’autres polymères FDM [[5]](#ref-5), sans toutefois permettre de généraliser ce résultat à tous les PETG ou à tous les produits commerciaux.
 
-Pour l’application Amavia, le **cyanoacrylate épais** est retenu non parce qu’il a démontré une résistance supérieure au CA régulier (ce que le montage actuel ne permet pas d’établir), mais parce qu’il combine une résistance supérieure à la capacité mesurable de l’essai avec une viscosité et un temps de travail plus favorables à la réalisation d’un joint circulaire continu.
+Pour l’application Amavia, le **cyanoacrylate épais** est retenu non parce qu’il a démontré une résistance supérieure au CA régulier (ce que le montage actuel ne permet pas d’établir), mais parce qu’il combine une résistance du joint supérieure à la limite atteinte par le PETG lors de l’essai avec une viscosité et un temps de travail plus favorables à la réalisation d’un joint circulaire continu.
 
 La validation n’est pas complète tant que la tenue à l’immersion, au vieillissement et aux cycles répétés de torsion n’a pas été mesurée. Le prochain jalon expérimental est donc l’essai d’étanchéité et de durabilité du boîtier assemblé.
 
