@@ -24,6 +24,16 @@ Two masses appear in the handwritten notes:
 - **2.0 kg**, corresponding to **19.62 N** using (g = 9.81 mathrm{m/s^2}), used for the first test series;
 - **4.2 kg**, corresponding to approximately **41.2 N**.
 
+## ASTM method context
+
+The verification method used here, in which known masses generate a static torque through a measured lever arm, is consistent in principle with ASTM torque-verification practice. ASTM E2624-17(2025), *Standard Practice for Torque Calibration of Testing Machines*, explicitly recognizes the use of standard weights and lever arms as one of the permitted methods for calibrating static or quasi-static torque-capable testing machines and devices. ASTM E2428-22, *Standard Practice for Calibration and Verification of Elastic Torque Measurement Standards*, provides the related framework for calibration and verification of elastic torque measurement standards used in torque metrology.
+
+This internal check was **not performed as a formal ASTM E2624 or ASTM E2428 calibration**. In particular, the procedure did not establish full metrological traceability or a complete uncertainty budget for lever-arm length, alignment, force application geometry, and all other contributors required for a formal calibration. The ASTM references are therefore used to document that the dead-weight and lever-arm principle is an established torque-verification approach, not to claim conformance with either standard.
+
+References:
+1. ASTM International, ASTM E2428-22, *Standard Practice for Calibration and Verification of Elastic Torque Measurement Standards*, ASTM International, West Conshohocken, PA, 2022. https://doi.org/10.1520/E2428-22
+2. ASTM International, ASTM E2624-17(2025), *Standard Practice for Torque Calibration of Testing Machines*, ASTM International, West Conshohocken, PA, 2025. https://doi.org/10.1520/E2624-17R25
+
 ## Narrative description of the test
 
 The torque wrench was arranged so that a known gravitational load produced a moment about the wrench axis at a measured lever arm. A reference mass was applied at the selected distance from the axis. The load was brought onto the wrench and maintained for a minimum of 4 s so that a stable indication could be observed and recorded. The indicated torque was then compared with the torque calculated from the applied force and the measured lever arm.
