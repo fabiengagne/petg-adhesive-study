@@ -1,0 +1,13 @@
+test_order,video_chapter_time,assembly_id,adhesive,indicated_peak_torque_Nm,torque_result_type,bond_failure_observed,reported_limiting_event,drive_geometry
+1,03:14,PUG-B,Original Gorilla Glue Minis,3.0,bond_failure,yes,adhesive joint failure,not documented per assembly
+2,03:30,JBW-B,J-B Weld epoxy,11.8,observed_peak,not specified,not specified per assembly,not documented per assembly
+3,04:13,EP5-A,System Three Quick Cure 5,18.6,substrate_limited,no,PETG fracture before bond failure,not documented per assembly
+4,05:03,EP5-B,System Three Quick Cure 5,12.8,bond_failure,yes,bond failure with PETG cracking,not documented per assembly
+5,05:45,JBW-A,J-B Weld epoxy,16.1,observed_peak,not specified,PETG cracking or delamination observed,not documented per assembly
+6,07:42,PUG-A,Original Gorilla Glue Minis,5.4,bond_failure,yes,adhesive joint failure,not documented per assembly
+7,08:31,CAE-B,stuck Thick Gel Super Glue,20.8,lower_bound,no,PETG or fixture limited continuation,not documented per assembly
+8,10:39,TBI-A,Titebond III Ultimate Wood Glue,9.8,bond_failure,yes,adhesive joint failure,not documented per assembly
+9,11:29,CAR-B,stuck Super Glue,20.5,lower_bound,no,PETG or fixture limited continuation,not documented per assembly
+10,12:30,CAE-A,stuck Thick Gel Super Glue,20.9,lower_bound,no,PETG or fixture limited continuation,not documented per assembly
+11,13:14,TBI-B,Titebond III Ultimate Wood Glue,7.0,bond_failure,yes,adhesive joint failure,not documented per assembly
+12,13:51,CAR-A,stuck Super Glue,20.4,lower_bound,no,PETG or fixture limited continuation,not documented per assembly

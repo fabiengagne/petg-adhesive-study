@@ -5,7 +5,7 @@
 
 ## Résumé
 
-Cette étude comparative évalue la performance de six adhésifs pour l’assemblage de pièces imprimées en PETG destinées à une application marine, soit les boîtiers des bouées autonomes du projet [Amavia](https://github.com/fabiengagne/Amavia). Les adhésifs examinés sont un époxy JB Weld, un époxy à prise rapide de 5 minutes, un adhésif polyuréthane Gorilla, un adhésif à bois Titebond III, ainsi que deux cyanoacrylates (CA) de viscosités différentes, régulier et épais. Deux éprouvettes par adhésif ont été soumises à un chargement en torsion reproduisant le type de sollicitation attendu sur le col fileté du compartiment batterie. Le couple maximal ainsi que le mode de rupture ont été consignés. Les adhésifs polyuréthane et Titebond III ont présenté les résistances les plus faibles, avec rupture principalement dans l’adhésif. Les époxys ont offert de meilleures performances, mais avec une variabilité notable entre les éprouvettes. Les cyanoacrylates ont fourni les meilleurs résultats : aucun des quatre essais n’a entraîné de rupture du joint. Les résistances observées sont donc rapportées comme des bornes inférieures (> 20,4 N·m), la déformation ou la rupture du PETG et du montage d’essai devenant alors le facteur limitant. Le cyanoacrylate épais a été retenu pour l’application finale en raison de sa résistance mécanique, de son temps de travail supérieur à celui du CA liquide et de sa viscosité mieux adaptée à l’obtention d’un joint continu. Un essai d’étanchéité en immersion est prévu afin de compléter la validation pour l’usage réel.
+Cette étude comparative évalue la performance de six adhésifs pour l’assemblage de pièces imprimées en PETG destinées à une application marine, soit les boîtiers des bouées autonomes du projet [Amavia](https://github.com/fabiengagne/Amavia). Les adhésifs examinés sont un époxy JB Weld, un époxy à prise rapide de 5 minutes, un adhésif polyuréthane Gorilla, un adhésif à bois Titebond III, ainsi que deux cyanoacrylates (CA) de viscosités différentes, régulier et épais. Deux assemblages collés par adhésif, chacun formé de deux pièces imprimées, ont été soumis à un chargement en torsion reproduisant le type de sollicitation attendu sur le col fileté du compartiment batterie. Le couple maximal ainsi que le mode de rupture ont été consignés. Les adhésifs polyuréthane et Titebond III ont présenté les résistances les plus faibles, avec rupture principalement dans l’adhésif. Les époxys ont offert de meilleures performances, mais avec une variabilité notable entre les éprouvettes. Les cyanoacrylates ont fourni les meilleurs résultats : aucun des quatre essais n’a entraîné de rupture du joint. Les résistances observées sont donc rapportées comme des bornes inférieures (> 20,4 N·m), la déformation ou la rupture du PETG et du montage d’essai devenant alors le facteur limitant. Le cyanoacrylate épais a été retenu pour l’application finale en raison de sa résistance mécanique, de son temps de travail supérieur à celui du CA liquide et de sa viscosité mieux adaptée à l’obtention d’un joint continu. Un essai d’étanchéité en immersion est prévu afin de compléter la validation pour l’usage réel.
 
 **Mots-clés :** PETG, adhésif, collage, cyanoacrylate, époxy, torsion, impression 3D, étanchéité, Amavia.
 
@@ -35,7 +35,7 @@ Ce joint doit :
 
 L'essai vise avant tout une **comparaison pratique entre plusieurs adhésifs facilement disponibles**, plutôt qu'une mesure normalisée de résistance absolue.
 
-Deux éprouvettes sont utilisées par adhésif. Cet échantillonnage est faible, mais suffisant pour obtenir une première comparaison entre les produits.
+Deux assemblages collés sont testés par adhésif. Cet échantillonnage est faible, mais suffisant pour obtenir une première comparaison entre les produits.
 
 ---
 
@@ -89,7 +89,7 @@ Les éprouvettes ont été imprimées avec **l’interface de collage directemen
 
 ## Éprouvettes
 
-Deux éprouvettes PETG ont été préparées pour chaque adhésif, pour un total de **12 éprouvettes**.
+Pour chaque adhésif, **deux assemblages collés** ont été testés. Chaque assemblage réunit **deux pièces imprimées en PETG** par leurs faces circulaires : la série comprend donc **12 assemblages testés et 24 pièces imprimées**. Les identifiants A et B désignent les assemblages d’un même adhésif, et non les deux moitiés d’un assemblage.
 
 La géométrie permet d'appliquer un **couple de torsion**, afin de reproduire le plus fidèlement possible le chargement réel attendu sur le col fileté du compartiment batterie.
 
@@ -101,7 +101,7 @@ Le fichier STL original de l’éprouvette est disponible dans le dépôt à l�
 
 ![Géométrie de l’éprouvette et disposition de deux éprouvettes face à face](../../media/figures/specimen-freecad-candidate.svg)
 
-*Figure 1. Vues de côté, de dessus et de dessous de l’éprouvette à entraînement hexagonal, et projection de deux éprouvettes dont les faces de collage se font face. L’écartement de 6 mm dans la projection sert uniquement à distinguer les deux pièces avant assemblage. Les annotations de la figure sont en anglais.*
+*Figure 1. Géométrie d’une pièce imprimée : (A) vue de côté, (B) vue de dessus et (C) vue de dessous. (D) Projection de deux pièces orientées face de collage contre face de collage; leur écartement de 6 mm sert uniquement à les distinguer avant l’assemblage et ne représente pas l’épaisseur du joint. Les annotations de la figure sont en anglais.*
 
 ### Préparation des surfaces et collage des éprouvettes
 
@@ -146,7 +146,7 @@ Lorsque le PETG ou le montage d'essai devient le maillon faible avant la rupture
 
 # Résultats
 
-| Adhésif | Échantillon A | Échantillon B | Observation principale |
+| Adhésif | Assemblage A | Assemblage B | Observation principale |
 |---|---:|---:|---|
 | **Gorilla polyuréthane** | **5,4 N·m** | **3,0 N·m** | Rupture de l’adhésif |
 | **Titebond III** | **9,8 N·m** | **7,0 N·m** | Rupture nette de l’adhésif |
@@ -306,7 +306,7 @@ Cette source est utilisée uniquement comme **contexte communautaire** et non co
 
 Plusieurs limites doivent être conservées à l’esprit :
 
-- seulement **deux éprouvettes par adhésif** ont été testées ;
+- seulement **deux assemblages par adhésif** ont été testés ;
 - le protocole n’est pas un essai normalisé de type *American Society for Testing and Materials* (ASTM) D3163 ;
 - la géométrie et le mode de chargement sont volontairement spécifiques à l’application Amavia ;
 - les quatre essais CA sont **censurés par la limite du PETG ou du montage**, et non par rupture du joint ;
@@ -398,7 +398,7 @@ Pour l’application Amavia, le **cyanoacrylate épais** est retenu non parce qu
 
 La validation n’est pas complète tant que la tenue à l’immersion, au vieillissement et aux cycles répétés de torsion n’a pas été mesurée. Le prochain jalon expérimental est donc l’essai d’étanchéité et de durabilité du boîtier assemblé.
 
-Les fichiers de projet et le matériel complémentaire sont maintenus dans le dépôt public **Mostly Intentional Design Labs / petg-adhesive-study**. Le fichier STL original de l’éprouvette est disponible sous `supplementary/stl/adhesive-test-specimen.stl`. D’autres éléments complémentaires, notamment un dessin coté dérivé de cette géométrie, des photographies des essais, des photographies des emballages d’adhésifs et des données expérimentales supplémentaires, pourront y être ajoutés.
+Les fichiers de projet et le matériel complémentaire sont maintenus dans le dépôt public **Mostly Intentional Design Labs / petg-adhesive-study**. Le fichier STL original de la pièce est disponible sous `supplementary/stl/adhesive-test-specimen.stl`; le dessin utilisé à la figure 1 se trouve sous `media/figures/specimen-freecad-candidate.svg`. Les 12 résultats individuels, dans l’ordre des essais indiqué par la vidéo de l’expérience, sont fournis sous `data/torsional-screening-results.csv`. Les photographies des essais et des emballages sont dans `media/photos/`.
 
 ---
 
@@ -408,7 +408,7 @@ Les fichiers de projet et le matériel complémentaire sont maintenus dans le d�
 
 <a id="ref-2"></a>**[2]** Khosravani, M. R., Soltani, P. & Reinicke, T. (2021). “Fracture and structural performance of adhesively bonded 3D-printed PETG single lap joints under different printing parameters.” *Theoretical and Applied Fracture Mechanics*, 116, 103087. https://doi.org/10.1016/j.tafmec.2021.103087
 
-<a id="ref-3"></a>**[3]** “Exploring the Role of Manufacturing Parameters on Microstructure and Mechanical Properties in Fused Deposition Modeling (FDM) Using PETG.” (2021). *Applied Composite Materials*, 28, 1799–1828. https://doi.org/10.1007/s10443-021-09940-9
+<a id="ref-3"></a>**[3]** Özen, A., Abali, B. E., Völlmecke, C., Gerstel, J. & Auhl, D. (2021). “Exploring the Role of Manufacturing Parameters on Microstructure and Mechanical Properties in Fused Deposition Modeling (FDM) Using PETG.” *Applied Composite Materials*, 28, 1799–1828. https://doi.org/10.1007/s10443-021-09940-9
 
 <a id="ref-4"></a>**[4]** Öz, Ö. & Öztürk, F. H. (2025). “The effect of adhesive and adherend compliance on the failure of 3D-printed parts.” *Welding in the World*, 69, 2869–2883. https://doi.org/10.1007/s40194-025-02048-9
 
