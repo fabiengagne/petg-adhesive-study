@@ -20,13 +20,23 @@
   <line x1="510" y1="640" x2="560" y2="640" stroke-width="1.2"/>
   <line x1="480" y1="410" x2="560" y2="410" stroke-width="1.2"/>
   <line x1="548" y1="638" x2="548" y2="412" stroke-width="1.3" marker-start="url(#dimArrow)" marker-end="url(#dimArrow)"/>
+  <!-- Base thickness, from bonded face to shoulder -->
+  <line x1="114" y1="640" x2="66" y2="640" stroke-width="1.2"/>
+  <line x1="114" y1="592" x2="66" y2="592" stroke-width="1.2"/>
+  <line x1="78" y1="638" x2="78" y2="594" stroke-width="1.3" marker-start="url(#dimArrow)" marker-end="url(#dimArrow)"/>
+  <!-- Base diameter in side view -->
+  <line x1="120" y1="650" x2="120" y2="789" stroke-width="1.2"/>
+  <line x1="500" y1="650" x2="500" y2="789" stroke-width="1.2"/>
+  <line x1="122" y1="777" x2="498" y2="777" stroke-width="1.3" marker-start="url(#dimArrow)" marker-end="url(#dimArrow)"/>
   <!-- Bonded face leader -->
   <line x1="310" y1="697" x2="310" y2="648" stroke-width="1.2" marker-end="url(#dimArrow)"/>
  </g>
  <g font-family="Arial,Helvetica,sans-serif" fill="#000">
   <text x="310" y="375" text-anchor="middle" font-size="23">Side view</text>
-  <text x="570" y="530" font-size="20" transform="rotate(-90 570 530)">13.0 mm</text>
+  <text x="570" y="530" font-size="20">13.0 mm</text>
+  <text x="78" y="580" text-anchor="middle" font-size="18">3.0 mm</text>
   <text x="310" y="727" text-anchor="middle" font-size="20">Bonded face</text>
+  <text x="310" y="808" text-anchor="middle" font-size="20">Ø25.0 mm base</text>
  </g>
  <!-- Bonded face view -->
  <g fill="none" stroke="#000">

@@ -93,7 +93,7 @@ Deux éprouvettes PETG ont été préparées pour chaque adhésif, pour un total
 
 La géométrie permet d'appliquer un **couple de torsion**, afin de reproduire le plus fidèlement possible le chargement réel attendu sur le col fileté du compartiment batterie.
 
-Le modèle de stéréolithographie (STL) fourni a été mesuré directement. L’éprouvette mesure **13,0 mm de hauteur totale** et **25,0 mm de diamètre maximal**. L’interface de collage est la face circulaire de première couche, imprimée directement sur le plateau, avec un diamètre nominal de **25,0 mm** et une aire plane nominale de **490,9 mm²**. L’extrémité opposée comporte une prise hexagonale de **21,0 mm entre plats**. La zone cylindrique de collage se raccorde à la zone hexagonale au-dessus de la face collée.
+Le modèle de stéréolithographie (STL) fourni a été mesuré directement. L’éprouvette mesure **13,0 mm de hauteur totale** et **25,0 mm de diamètre maximal**. Sa base circulaire mesure **3,0 mm de hauteur** et **25,0 mm de diamètre nominal**. L’interface de collage est la face de première couche de cette base, imprimée directement sur le plateau, avec une aire plane nominale de **490,9 mm²**. L’extrémité opposée comporte une prise hexagonale de **21,0 mm entre plats**. La zone cylindrique de collage se raccorde à la zone hexagonale au-dessus de la face collée.
 
 Les premières éprouvettes possèdent une prise carrée. Les suivantes utilisent la prise hexagonale de 21,0 mm entre plats représentée par le fichier STL et peuvent être engagées directement dans une douille. Cette modification du montage constitue une limite de cette série préliminaire.
 
@@ -101,7 +101,7 @@ Le fichier STL original de l’éprouvette est disponible dans le dépôt à l�
 
 ![Schéma dimensionnel de l’éprouvette](../../media/figures/specimen-dimensioned-fr.svg)
 
-*Figure 1. Vues orthographiques cotées de l’éprouvette à entraînement hexagonal, dérivées de la géométrie STL corrigée. Dimensions en millimètres; vues non à l’échelle.*
+*Figure 1. Vues orthographiques cotées de l’éprouvette à entraînement hexagonal, avec le diamètre et la hauteur de la base indiqués sur la vue de côté. Dimensions dérivées du STL, en millimètres; vues non à l’échelle.*
 
 ### Préparation des surfaces et collage des éprouvettes
 
@@ -111,7 +111,7 @@ Après application de l’adhésif et assemblage, les éprouvettes ont été **p
 
 ## Instrumentation
 
-Le couple est mesuré à l'aide d'une **clé dynamométrique numérique SOARFLY, modèle YX01-24** (*Digital Torque Wrench*), dont l’affichage a une résolution de **0,1 N·m**. La fiche commerciale consultée indique une capacité maximale de **220 N·m** et une exactitude annoncée de **±1 %**. Aucun certificat d’étalonnage du fabricant ni spécification métrologique détaillée n’était disponible pour préciser la portion de la plage concernée, l’influence du sens de rotation, la résolution, ou si le ±1 % est relatif à la lecture ou à la pleine échelle. Cette valeur est donc considérée ici comme une **spécification annoncée par le fabricant ou le vendeur**, et non comme une incertitude de mesure établie indépendamment.
+Le couple est mesuré à l'aide d'une **clé dynamométrique numérique SOARFLY, modèle YX01-24** (*Digital Torque Wrench*), dont l’affichage a une résolution de **0,1 N·m**. La fiche commerciale indique une capacité maximale de **220 N·m** et une exactitude annoncée de **±1 %**. Cette dernière valeur est une spécification du vendeur, et non une exactitude démontrée pour les présentes mesures.
 
 L’éprouvette est maintenue dans un étau par sa géométrie de prise ou par une douille, selon la version de l’éprouvette. Le couple est augmenté manuellement jusqu’à l’apparition d’un des événements suivants :
 
@@ -122,7 +122,7 @@ L’éprouvette est maintenue dans un étau par sa géométrie de prise ou par u
 
 L’instrument conserve la valeur maximale atteinte pendant chaque chargement.
 
-Avant les essais, la réponse de l’instrument a été vérifiée à l’aide de charges de valeur connue et s’est révélée très proche des valeurs attendues. Cette vérification constituait une **vérification fonctionnelle interne** et non un étalonnage traçable. Le rapport de cette vérification est conservé dans le dépôt sous `internal-tests/torque-wrench-verification/torque-wrench-verification-report.md`.
+Avant les essais, une **vérification fonctionnelle interne** a été effectuée avec des masses connues et des bras de levier mesurés, dans le sens horaire. Aux cinq points vérifiés, d’environ **3 à 15 N·m**, l’écart relatif maximal observé était de **2,92 %**. Cette vérification appuie l’usage comparatif de la clé, mais ne constitue pas un étalonnage traçable et ne démontre pas l’exactitude annoncée de ±1 %. Le rapport final de vérification est conservé sous `internal-tests/torque-wrench-verification/torque-wrench-verification-report.md`.
 
 Les résultats sont exprimés sous forme de **couple appliqué en N·m**. Ils ne sont pas convertis en contrainte de cisaillement de l’adhésif, puisque la géométrie du joint et la distribution des contraintes sont spécifiques à l’application et ne correspondent pas à un essai de cisaillement uniforme normalisé.
 
@@ -310,7 +310,7 @@ Plusieurs limites doivent être conservées à l’esprit :
 - le protocole n’est pas un essai normalisé de type *American Society for Testing and Materials* (ASTM) D3163 ;
 - la géométrie et le mode de chargement sont volontairement spécifiques à l’application Amavia ;
 - les quatre essais CA sont **censurés par la limite du PETG ou du montage**, et non par rupture du joint ;
-- la clé dynamométrique comporte une exactitude annoncée de ±1 %, mais aucun certificat d’étalonnage traçable ni spécification complète d’incertitude n’était disponible, et l’incertitude de mesure n’a pas été propagée formellement ;
+- la vérification fonctionnelle de la clé couvrait environ 3 à 15 N·m, en deçà des couples les plus élevés de cette étude ; elle ne constitue pas un étalonnage traçable, l’incertitude de mesure n’a pas été évaluée formellement et la vitesse d’application du couple aux éprouvettes n’a pas été mesurée ;
 - deux géométries de prise ont été utilisées pendant cette série préliminaire ;
 - la résistance à l’eau, au vieillissement, aux cycles thermiques et aux ouvertures/fermetures répétées n’est pas encore caractérisée ;
 - la formulation exacte des cyanoacrylates stuck n’est pas documentée et pourrait varier avec l’approvisionnement.
