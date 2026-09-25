@@ -21,7 +21,7 @@ For each test point, the load was applied continuously for **at least 4 s** befo
 
 Two masses appear in the handwritten notes:
 
-- **2.2 kg**, corresponding to **21.58 N** using (g = 9.81 mathrm{m/s^2});
+- **2.0 kg**, corresponding to **19.62 N** using (g = 9.81 mathrm{m/s^2}), used for the first test series;
 - **4.2 kg**, corresponding to approximately **41.2 N**.
 
 ## Narrative description of the test
@@ -36,9 +36,9 @@ The table below is a **preliminary transcription**. Entries marked **[to confirm
 
 | Mass | Force | Lever arm | Instrument indication | Reference torque calculated from mass and arm | Status |
 |---:|---:|---:|---:|---:|---|
-| 2.2 kg | 21.58 N | 0.300 m | approx. 5.9 N·m **[to confirm]** | 6.47 N·m | Handwriting partly unclear |
-| 2.2 kg | 21.58 N | 0.360 m | 7.0 N·m | 7.77 N·m | Readable |
-| 2.2 kg | 21.58 N | 0.160 m **[to confirm]** | approx. 3.2 N·m **[to confirm]** | 3.45 N·m | Handwriting difficult to read |
+| 2.0 kg | 19.62 N | 0.300 m | approx. 5.9 N·m **[to confirm]** | 5.89 N·m | Handwriting partly unclear |
+| 2.0 kg | 19.62 N | 0.360 m | 7.0 N·m | 7.06 N·m | Readable |
+| 2.0 kg | 19.62 N | 0.160 m **[to confirm]** | approx. 3.2 N·m **[to confirm]** | 3.14 N·m | Handwriting difficult to read |
 | 4.2 kg | approx. 41.2 N | 0.305 m | 12.2 N·m | 12.57 N·m | Readable |
 | 4.2 kg | approx. 41.2 N | 0.360 m **[to confirm]** | **14.9 N·m** | **14.83 N·m** | Instrument reading is legible; lever arm should still be confirmed |
 
@@ -66,8 +66,8 @@ A final error table and percentage deviation should be calculated only after all
 
 ## Items to confirm
 
-- [ ] Confirm the first reading with the 2.2 kg mass at approximately 0.300 m.
-- [ ] Confirm the third 2.2 kg test lever arm and instrument reading.
+- [ ] Confirm the first reading with the 2.0 kg mass at approximately 0.300 m.
+- [ ] Confirm the third 2.0 kg test lever arm and instrument reading.
 - [ ] Confirm that the second lever arm used with the 4.2 kg mass was 0.360 m. The instrument reading itself is legible as 14.9 N·m.
 - [ ] Record the method used to measure the lever arm and its measurement resolution.
 - [x] Reference masses were weighed to ±1 g.
