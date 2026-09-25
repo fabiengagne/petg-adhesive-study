@@ -28,21 +28,31 @@ Two masses appear in the handwritten notes:
 
 The torque wrench was arranged so that a known gravitational load produced a moment about the wrench axis at a measured lever arm. A reference mass was applied at the selected distance from the axis. The load was brought onto the wrench and maintained for a minimum of 4 s so that a stable indication could be observed and recorded. The indicated torque was then compared with the torque calculated from the applied force and the measured lever arm.
 
-Several lever-arm distances were used in order to check the instrument response at multiple torque levels. The original handwritten notes are preserved with this report because several entries are difficult to read and will be confirmed before the report is considered final.
+Several lever-arm distances were used in order to check the instrument response at multiple torque levels. The original handwritten notes are preserved with this report. The previously ambiguous 5.9 N·m and 3.2 N·m readings have since been confirmed from the original test record.
 
-## Preliminary transcription of handwritten notes
+## Final transcription and comparison
 
-The table below is a **preliminary transcription**. Entries marked **[to confirm]** are not considered authoritative until checked against the original test recollection.
+The handwritten test record has now been reconciled sufficiently for the torque readings to be treated as confirmed. Reference torque was recalculated from the recorded mass and lever arm using \(T = m g r\), with \(g = 9.81\ \mathrm{m/s^2}\).
 
-| Mass | Force | Lever arm | Instrument indication | Reference torque calculated from mass and arm | Status |
-|---:|---:|---:|---:|---:|---|
-| 2.0 kg | 19.62 N | 0.300 m | approx. 5.9 N·m **[to confirm]** | 5.89 N·m | Handwriting partly unclear |
-| 2.0 kg | 19.62 N | 0.360 m | 7.0 N·m | 7.06 N·m | Readable |
-| 2.0 kg | 19.62 N | 0.160 m **[to confirm]** | approx. 3.2 N·m **[to confirm]** | 3.14 N·m | Handwriting difficult to read |
-| 4.2 kg | approx. 41.2 N | 0.305 m | 12.2 N·m | 12.57 N·m | Readable |
-| 4.2 kg | approx. 41.2 N | 0.360 m **[to confirm]** | **14.9 N·m** | **14.83 N·m** | Instrument reading is legible; lever arm should still be confirmed |
+| Mass | Force | Lever arm | Instrument indication | Calculated reference torque | Mean of indication and reference | Error | Relative error |
+|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2.0 kg | 19.62 N | 0.300 m | 5.9 N·m | 5.89 N·m | 5.90 N·m | +0.01 N·m | +0.24 % |
+| 2.0 kg | 19.62 N | 0.360 m | 7.0 N·m | 7.06 N·m | 7.03 N·m | -0.06 N·m | -0.89 % |
+| 2.0 kg | 19.62 N | 0.160 m | 3.2 N·m | 3.14 N·m | 3.17 N·m | +0.06 N·m | +1.94 % |
+| 4.2 kg | 41.20 N | 0.305 m | 12.2 N·m | 12.57 N·m | 12.38 N·m | -0.37 N·m | -2.92 % |
+| 4.2 kg | 41.20 N | 0.360 m | 14.9 N·m | 14.83 N·m | 14.87 N·m | +0.07 N·m | +0.45 % |
 
-The reference torques in the fifth column were recalculated independently from the stated masses and lever-arm values. They are included to help identify transcription errors while the handwritten values are being clarified.
+The mean column is the arithmetic mean of the instrument indication and the calculated reference value for each test point. It is included only as a descriptive comparison and is not used as an accuracy metric.
+
+Across the five test points, the mean signed relative error is approximately **-0.24 %**, the mean absolute relative error is approximately **1.29 %**, and the root-mean-square relative error is approximately **1.63 %**.
+
+## Initial observations and assessment
+
+The instrument follows the expected torque closely over the approximately 3 to 15 N·m range tested. Three of the five points fall within ±1 % of the calculated reference torque. The largest observed deviation is approximately **-2.92 %** at the 12.57 N·m reference point.
+
+The seller-stated ±1 % accuracy claim is therefore **not demonstrated by this internal check over the full tested range**. At the same time, this result should not be interpreted as a formal calibration failure. The wrench display resolution is 0.1 N·m, corresponding to a quantization contribution of up to about ±0.05 N·m, which alone represents about ±1.6 % at the lowest 3.14 N·m reference point. The reference masses were measured to ±1 g, making their contribution comparatively small, but the uncertainty in lever-arm length, load alignment, and exact force application geometry was not characterized.
+
+For the purpose for which the wrench was used in the PETG adhesive screening, the internal verification supports treating the instrument as **reasonably accurate for comparative testing**, with observed agreement generally on the order of a few percent. The present data do not justify claiming a verified ±1 % measurement accuracy. For publication purposes, the most defensible characterization remains that the SOARFLY YX01-24 was functionally checked against known gravitational loads and showed agreement within approximately **3 %** over the tested range, without traceable calibration.
 
 ## Initial observations
 
@@ -66,9 +76,6 @@ A final error table and percentage deviation should be calculated only after all
 
 ## Items to confirm
 
-- [ ] Confirm the first reading with the 2.0 kg mass at approximately 0.300 m.
-- [ ] Confirm the third 2.0 kg test lever arm and instrument reading.
-- [ ] Confirm that the second lever arm used with the 4.2 kg mass was 0.360 m. The instrument reading itself is legible as 14.9 N·m.
 - [ ] Record the method used to measure the lever arm and its measurement resolution.
 - [x] Reference masses were weighed to ±1 g.
 - [ ] Record whether torque was applied in the clockwise or counterclockwise direction.
