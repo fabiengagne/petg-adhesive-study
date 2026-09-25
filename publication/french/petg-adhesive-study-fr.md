@@ -59,7 +59,7 @@ La Titebond III est incluse comme essai exploratoire. Elle n'est pas destinée a
 
 Les sièges sociaux des fabricants identifiés ont été vérifiés à partir de sources publiques des entreprises. Pour les cyanoacrylates **stuck**, les photographies confirment les désignations commerciales et leur vente chez Dollarama, mais ne permettent pas d'identifier de manière fiable l'entité manufacturière derrière le produit. Pour cette raison, **Dollarama Inc. (Montréal, Québec, Canada)** est mentionnée uniquement comme détaillant/distributeur. L'époxy à prise rapide a pu être identifié visuellement comme **System Three Quick Cure 5**, fabriqué par **System Three Resins, Inc.**
 
-Les photographies des contenants montrent les codes de sertissage ou d'emballage suivants : **250328** sur le tube Original Gorilla Glue Minis, **0526** sur le tube stuck Thick Gel Super Glue et **0326** sur le tube stuck Super Glue. Aucun libellé sur les emballages ne permet d'établir avec certitude qu'il s'agit de numéros de lot ou de dates d'expiration. Ils sont donc consignés uniquement comme **codes d'emballage visibles**. Aucun numéro de lot explicite ni date d'expiration n'est visible sur les contenants J-B Weld, Titebond III ou System Three photographiés.
+Les photographies des contenants montrent les codes de sertissage ou d'emballage suivants : **250328** sur le tube Original Gorilla Glue Minis, **0526** sur le tube stuck Thick Gel Super Glue et **0326** sur le tube stuck Super Glue. Aucun libellé sur les emballages ne permet d'établir avec certitude qu'il s'agit de numéros de lot ou de dates d'expiration. Ils sont donc consignés uniquement comme **codes d'emballage visibles**. Aucun numéro de lot explicite ni date d'expiration n'est visible sur les contenants J-B Weld, Titebond III ou System Three photographiés. Les dates d'achat n'ont pas été consignées.
 
 ---
 
@@ -141,6 +141,10 @@ Le **mode de rupture** est également observé visuellement après l’essai :
 - glissement de l’éprouvette ou de la douille.
 
 Lorsque le PETG ou le montage d'essai devient le maillon faible avant la rupture du joint, la valeur obtenue est considérée comme une **borne inférieure de la résistance réelle du joint** et est rapportée avec le symbole « > ».
+
+## Déclaration d’utilisation de l’intelligence artificielle
+
+OpenAI Codex a été utilisé pour aider à réviser la rédaction du manuscrit, vérifier des renseignements bibliographiques, préparer la figure 1 à partir du STL du projet au moyen de FreeCAD et structurer le fichier CSV à partir de la vidéo des essais et des valeurs déjà consignées. Aucun outil d’intelligence artificielle n’a réalisé les essais ni produit les mesures de couple. Les auteurs demeurent responsables de la vérification des sources, de l’analyse et du contenu final.
 
 ---
 
