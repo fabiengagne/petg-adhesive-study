@@ -113,6 +113,8 @@ Après application de l’adhésif et assemblage, les éprouvettes ont été **p
 
 Le couple est mesuré à l'aide d'une **clé dynamométrique numérique SOARFLY, modèle YX01-24** (*Digital Torque Wrench*), dont l’affichage a une résolution de **0,1 N·m**. La fiche commerciale indique une capacité maximale de **220 N·m** et une exactitude annoncée de **±1 %**. Cette dernière valeur est une spécification du vendeur, et non une exactitude démontrée pour les présentes mesures.
 
+Avant les essais, une **vérification fonctionnelle interne** a été effectuée avec des masses connues et des bras de levier mesurés, dans le sens horaire. Aux cinq points vérifiés, d’environ **3 à 15 N·m**, l’écart relatif maximal observé était de **2,92 %**. Cette vérification appuie l’usage comparatif de la clé, mais ne constitue pas un étalonnage traçable et ne démontre pas l’exactitude annoncée de ±1 %. Le rapport final de vérification est conservé sous `internal-tests/torque-wrench-verification/torque-wrench-verification-report.md`.
+
 L’éprouvette est maintenue dans un étau par sa géométrie de prise ou par une douille, selon la version de l’éprouvette. Le couple est augmenté manuellement jusqu’à l’apparition d’un des événements suivants :
 
 - rupture de l’adhésif ou de l’interface ;
@@ -121,8 +123,6 @@ L’éprouvette est maintenue dans un étau par sa géométrie de prise ou par u
 - glissement de l’éprouvette ou de la douille empêchant de poursuivre l’essai de manière valide.
 
 L’instrument conserve la valeur maximale atteinte pendant chaque chargement.
-
-Avant les essais, une **vérification fonctionnelle interne** a été effectuée avec des masses connues et des bras de levier mesurés, dans le sens horaire. Aux cinq points vérifiés, d’environ **3 à 15 N·m**, l’écart relatif maximal observé était de **2,92 %**. Cette vérification appuie l’usage comparatif de la clé, mais ne constitue pas un étalonnage traçable et ne démontre pas l’exactitude annoncée de ±1 %. Le rapport final de vérification est conservé sous `internal-tests/torque-wrench-verification/torque-wrench-verification-report.md`.
 
 Les résultats sont exprimés sous forme de **couple appliqué en N·m**. Ils ne sont pas convertis en contrainte de cisaillement de l’adhésif, puisque la géométrie du joint et la distribution des contraintes sont spécifiques à l’application et ne correspondent pas à un essai de cisaillement uniforme normalisé.
 

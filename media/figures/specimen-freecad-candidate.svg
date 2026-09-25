@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120">
+<rect width="1600" height="1120" fill="white"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#17212b">
+<text x="65" y="48" font-size="34" font-weight="700">PETG adhesive test specimen</text>
+<text x="65" y="80" font-size="18">FreeCAD reconstruction from the supplied STL · review candidate · dimensions in mm</text>
+</g>
+<rect x="50" y="110" width="730" height="460" rx="10" fill="none" stroke="#bdc6ce" stroke-width="1.5"/>
+<text x="76" y="152" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" fill="#17212b">01 / SIDE</text>
+<text x="76" y="182" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#4d5966">Single specimen • circular base, transition and hex drive</text>
+<g transform="translate(400 320) scale(12.0)"><g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="0.14" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4">
+<path d="M-12.5, 6.5 L-12.1866, 6.5  L-11.2621, 6.5  L-9.77289, 6.5  L-7.79362, 6.5  L-5.42355, 6.5  L-2.78151, 6.5  L-2.22045e-15, 6.5  L2.78151, 6.5  L5.42355, 6.5  L7.79362, 6.5  L9.77289, 6.5  L11.2621, 6.5  L12.1866, 6.5  L12.5, 6.5 " /><path id= "2" d=" M 12.5 6.5 L 12.5 3.5 " />
+<path d="M6.05457, 3.5 L6.86828, 3.5  L7.64225, 3.5  L8.37201, 3.5  L9.05332, 3.5  L9.68226, 3.5  L10.2552, 3.5  L10.7688, 3.5  L11.22, 3.5  L11.6064, 3.5  L11.9256, 3.5  L12.1758, 3.5  L12.3556, 3.5  L12.4638, 3.5  L12.5, 3.5 " /><path d="M-6.44341, 3.5 L-5.62494, 3.5  L-4.775, 3.5  L-3.89837, 3.5  L-2.99993, 3.5  L-2.08472, 3.5  L-1.15784, 3.5  L-0.224496, 3.5  L0.710107, 3.5  L1.64074, 3.5  L2.5622, 3.5  L3.46932, 3.5  L4.35705, 3.5  L5.22041, 3.5  L6.05457, 3.5 " /><path d="M-12.5, 3.5 L-12.4662, 3.5  L-12.3651, 3.5  L-12.1972, 3.5  L-11.9634, 3.5  L-11.665, 3.5  L-11.3035, 3.5  L-10.881, 3.5  L-10.3997, 3.5  L-9.86223, 3.5  L-9.27147, 3.5  L-8.63062, 3.5  L-7.94315, 3.5  L-7.21276, 3.5  L-6.44341, 3.5 " /><path d="M12.5, 3.5 L12.1224, 2 " /><path id= "7" d=" M 5.87262 2 L 12.1224 2 " />
+<path d="M6.05457, 3.5 L5.87262, 2 " /><path id= "9" d=" M -6.24978 2 L 5.87262 2 " />
+<path d="M-6.44341, 3.5 L-6.24978, 2 " /><path id= "11" d=" M -12.1224 2 L -6.24978 2 " />
+<path d="M-12.4835, 3.44226 L-12.1224, 2 " /><path id= "13" d=" M 5.87262 2 L 5.87262 -6.5 " />
+<path id= "14" d=" M 12.1224 2 L 12.1224 -6.5 " />
+<path id= "15" d=" M 5.87262 -6.5 L 12.1224 -6.5 " />
+<path id= "16" d=" M -6.24978 2 L -6.24978 -6.5 " />
+<path id= "17" d=" M -6.24978 -6.5 L 5.87262 -6.5 " />
+<path id= "18" d=" M -12.1224 2 L -12.1224 -6.5 " />
+<path id= "19" d=" M -12.1224 -6.5 L -6.24978 -6.5 " />
+<path id= "1" d=" M -12.5 3.5 L -12.5 6.5 " />
+<path d="M-12.5, 3.5 L-12.4835, 3.44226 " /></g>
+</g>
+<rect x="820" y="110" width="730" height="460" rx="10" fill="none" stroke="#bdc6ce" stroke-width="1.5"/>
+<text x="846" y="152" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" fill="#17212b">02 / TOP</text>
+<text x="846" y="182" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#4d5966">Hex drive end • 21.0 mm across flats</text>
+<g transform="translate(1200 320) scale(12.0)"><g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="0.14" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4">
+<circle cx ="0" cy ="0" r ="12.5" /></g>
+</g>
+<rect x="50" y="600" width="730" height="460" rx="10" fill="none" stroke="#bdc6ce" stroke-width="1.5"/>
+<text x="76" y="642" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" fill="#17212b">03 / BOTTOM</text>
+<text x="76" y="672" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#4d5966">Circular bonded face • nominal Ø25.0 mm</text>
+<g transform="translate(400 825) scale(12.0)"><g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="0.14" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4">
+<path d="M6.05457 10.9358 A12.5 12.5 0 0 0 12.5 3.06162e-15" /><path d="M-6.44341 10.7113 A12.5 12.5 0 0 0 6.05457 10.9358" /><path d="M-12.498 -0.224496 A12.5 12.5 0 0 0 -6.44341 10.7113" /><path d="M-6.05457 -10.9358 A12.5 12.5 0 0 0 -12.498 -0.224496" /><path d="M6.44341 -10.7113 A12.5 12.5 0 0 0 -6.05457 -10.9358" /><path d="M12.5 0 A12.5 12.5 0 0 0 6.44341 -10.7113" /><path d="M12.5, 0 L12.1224, 0.21775 " /><path d="M6.05457, 10.9358 L5.87262, 10.6072 " /><path d="M-6.44341, 10.7113 L-6.24978, 10.3894 " /><path d="M-12.498, -0.224496 L-12.1224, -0.21775 " /><path d="M-6.05457, -10.9358 L-5.87262, -10.6072 " /><path d="M6.44341, -10.7113 L6.24978, -10.3894 " /><path id= "13" d=" M 5.87262 10.6072 L 12.1224 0.21775 " />
+<path id= "14" d=" M -6.24978 10.3894 L 5.87262 10.6072 " />
+<path id= "15" d=" M -12.1224 -0.21775 L -6.24978 10.3894 " />
+<path id= "16" d=" M -5.87262 -10.6072 L -12.1224 -0.21775 " />
+<path id= "17" d=" M 6.24978 -10.3894 L -5.87262 -10.6072 " />
+<path id= "18" d=" M 12.1224 0.21775 L 6.24978 -10.3894 " />
+</g>
+</g>
+<rect x="820" y="600" width="730" height="460" rx="10" fill="none" stroke="#bdc6ce" stroke-width="1.5"/>
+<text x="846" y="642" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" fill="#17212b">04 / OPPOSED PAIR</text>
+<text x="846" y="672" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#4d5966">Bonded faces facing • 3.0 mm clear gap before assembly</text>
+<g transform="translate(1200 825) scale(11.0)"><g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="0.14" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4">
+<path d="M-6.36039 -8.83883 A12.5 7.21688 -90 0 1 -1.25728 -12.5" />
+<path d="M-1.25728 -12.5 A12.5 7.21688 -90 0 1 -0.0325382 -12.3187" />
+<path d="M-0.0325382 12.3187 A12.5 7.21688 -90 0 1 -1.25728 12.5" />
+<path d="M-1.25728 12.5 A12.5 7.21688 -90 0 1 -6.36039 -8.83883" />
+<path d="M-10.6431 3.45156 A12.5 7.21688 -90 0 1 -8.80988 -8.83883" />
+<path d="M-5.44914 12.1302 A12.5 7.21688 -90 0 1 -5.71444 12.0066" />
+<path d="M-5.71444 12.0066 A12.5 7.21688 -90 0 1 -9.65217 7.08568" />
+<path d="M-9.65217 7.08568 A12.5 7.21688 -90 0 1 -10.6431 3.45156" />
+<path d="M-3.70677 12.5 A12.5 7.21688 -90 0 1 -5.32602 12.1813" />
+<path d="M-5.32602 12.1813 A12.5 7.21688 -90 0 1 -5.44914 12.1302" />
+<path d="M-8.80988 -8.83883 A12.5 7.21688 -90 0 1 -7.89665 -10.1777" />
+<path d="M-7.89665 -10.1777 A12.5 7.21688 -90 0 1 -3.70677 -12.5" />
+<path d="M-8.80988, -8.83883 L-9.96936, -8.41786 " /><path id= "14" d=" M -11.6594 3.34784 L -9.96936 -8.41786 " />
+<path d="M-10.6431, 3.45156 L-11.6594, 3.34784 " /><path id= "16" d=" M -6.62152 11.7657 L -7.0136 11.1106 " />
+<path id= "17" d=" M -10.5426 5.21388 L -11.6594 3.34784 " />
+<path d="M-5.44914, 12.1302 L-5.61238, 12.0795 " /><path d="M-5.61238, 12.0795 L-6.62152, 11.7657 " /><path id= "20" d=" M -9.96936 -8.41786 L -9.80368 -8.5003 " />
+<path id= "21" d=" M -11.6594 3.34784 L -18.5996 3.34784 " />
+<path id= "22" d=" M -9.96936 -8.41786 L -16.9096 -8.41786 " />
+<path id= "23" d=" M -18.5996 3.34784 L -16.9096 -8.41786 " />
+<path id= "24" d=" M -6.62152 11.7657 L -13.5617 11.7657 " />
+<path id= "25" d=" M -13.5617 11.7657 L -18.5996 3.34784 " />
+<path id= "26" d=" M -6.14387 -11.7657 L -10.1817 -11.7657 " />
+<path id= "27" d=" M -16.9096 -8.41786 L -10.1817 -11.7657 " />
+<path d="M1.19221 -12.5 A12.5 7.21688 90 0 0 1.19221 12.5" />
+<path d="M1.64894 12.014 A12.5 7.21688 90 0 0 3.6417 12.5" />
+<path d="M3.6417 12.5 A12.5 7.21688 90 0 0 6.25308 11.653" />
+<path d="M-3.36169 3.01787 A12.5 7.21688 90 0 0 1.64894 12.014" />
+<path d="M-1.36893 -8.99615 A12.5 7.21688 90 0 0 -3.36169 3.01787" />
+<path d="M5.4451 -12.1034 A12.5 7.21688 90 0 0 3.6417 -12.5" />
+<path d="M3.6417 -12.5 A12.5 7.21688 90 0 0 -1.36893 -8.99615" />
+<path d="M1.64894, 12.014 L2.74041, 11.7073 " /><path d="M2.74041, 11.7073 L2.93357, 11.653 " /><path id= "37" d=" M -1.92649 2.92718 L 2.93357 11.653 " />
+<path d="M-3.36169, 3.01787 L-1.92649, 2.92718 " /><path id= "39" d=" M 0.0063882 -8.7258 L -1.92649 2.92718 " />
+<path d="M-1.36893, -8.99615 L0.0063882, -8.7258 " /><path id= "41" d=" M 6.79932 -11.653 L 0.0063882 -8.7258 " />
+<path d="M5.63446, -12.014 L5.88273, -11.9371 " /><path d="M5.88273, -11.9371 L6.79932, -11.653 " /><path id= "44" d=" M 2.93357 11.653 L 9.87379 11.653 " />
+<path id= "45" d=" M 9.87379 11.653 L 16.6667 8.7258 " />
+<path id= "46" d=" M -1.92649 2.92718 L 5.01373 2.92718 " />
+<path id= "47" d=" M 5.01373 2.92718 L 9.87379 11.653 " />
+<path id= "48" d=" M 0.0063882 -8.7258 L 6.94661 -8.7258 " />
+<path id= "49" d=" M 6.94661 -8.7258 L 5.01373 2.92718 " />
+<path id= "50" d=" M 6.79932 -11.653 L 13.7395 -11.653 " />
+<path id= "51" d=" M 13.7395 -11.653 L 6.94661 -8.7258 " />
+<path id= "52" d=" M 18.5996 -2.92718 L 13.7395 -11.653 " />
+<path id= "53" d=" M 16.6667 8.7258 L 18.5996 -2.92718 " />
+<path id= "1" d=" M -3.70677 12.5 L -1.25728 12.5 " />
+<path id= "2" d=" M -3.70677 -12.5 L -1.25728 -12.5 " />
+<path d="M-9.65217, 7.08568 C-9.90159, 6.46092 -10.1824, 5.81844 -10.5426, 5.21388 " /><path d="M-5.32602, 12.1813 Q-5.46886, 12.1242 -5.61238, 12.0795 " /><path d="M-7.89665, -10.1777 C-8.46536, -9.47562 -9.09655, -8.85192 -9.80368, -8.5003 " /><path id= "6" d=" M 3.6417 -12.5 L 1.19221 -12.5 " />
+<path id= "7" d=" M 3.6417 12.5 L 1.19221 12.5 " />
+<path d="M5.4451, -12.1034 Q5.66285, -12.0057 5.88273, -11.9371 " /></g>
+</g>
+<text x="65" y="1093" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#4d5966">Nominal reverse engineering: Ø25 × 3 base, 1.5 transition, 21 across flats, 13 overall. The STL mesh is the dimensional reference.</text>
+</svg>
