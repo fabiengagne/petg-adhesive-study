@@ -52,20 +52,7 @@ The instrument follows the expected torque closely over the approximately 3 to 1
 
 The seller-stated ±1 % accuracy claim is therefore **not demonstrated by this internal check over the full tested range**. At the same time, this result should not be interpreted as a formal calibration failure. The wrench display resolution is 0.1 N·m, corresponding to a quantization contribution of up to about ±0.05 N·m, which alone represents about ±1.6 % at the lowest 3.14 N·m reference point. The reference masses were measured to ±1 g, making their contribution comparatively small, but the uncertainty in lever-arm length, load alignment, and exact force application geometry was not characterized.
 
-For the purpose for which the wrench was used in the PETG adhesive screening, the internal verification supports treating the instrument as **reasonably accurate for comparative testing**, with observed agreement generally on the order of a few percent. The present data do not justify claiming a verified ±1 % measurement accuracy. For publication purposes, the most defensible characterization remains that the SOARFLY YX01-24 was functionally checked against known gravitational loads and showed agreement within approximately **3 %** over the tested range, without traceable calibration.
-
-## Initial observations
-
-The readable test points indicate that the wrench response was of the correct order of magnitude across the tested range. For the 4.2 kg mass, the clearly legible point at 0.305 m records 12.2 N·m versus a calculated 12.57 N·m, while the second legible instrument reading is 14.9 N·m versus approximately 14.83 N·m if the lever arm is confirmed as 0.360 m.
-
-No conclusion about compliance with the seller-stated ±1 % accuracy specification should be drawn from these preliminary values because:
-
-1. some handwritten readings still require confirmation;
-2. the reference masses were weighed to ±1 g, but the lever-arm measurement uncertainty has not yet been quantified;
-3. the exact force application geometry and alignment have not yet been documented;
-4. the procedure was an internal functional verification and not a traceable calibration.
-
-A final error table and percentage deviation should be calculated only after all handwritten values and setup dimensions have been confirmed.
+For the purpose for which the wrench was used in the PETG adhesive screening, the internal verification supports treating the instrument as **reasonably accurate for comparative testing**, with observed agreement generally on the order of a few percent. The present data do not justify claiming a verified ±1 % measurement accuracy. Because only one indication was recorded at each torque point, this test does **not** establish measurement precision or repeatability in the strict metrological sense. For publication purposes, the most defensible characterization remains that the SOARFLY YX01-24 was functionally checked against known gravitational loads and showed agreement within approximately **3 %** over the tested range, without traceable calibration.
 
 ## Records
 
