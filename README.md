@@ -16,4 +16,5 @@ The French publication is the current working version. An English version and ad
 ## Authors
 
 Fabien Gagné, Jacques Girard
+
 Mostly Intentional Design Labs, Montréal, QC, Canada
