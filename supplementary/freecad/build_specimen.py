@@ -193,19 +193,20 @@ def view_svg(view, cx, cy, scale):
 
 
 panels = [
-    ("01 / SIDE", "Single specimen • circular base, transition and hex drive", side, 400, 245, 12.0),
-    ("02 / TOP", "Hex drive end • 21.0 mm across flats", top, 1200, 245, 12.0),
-    ("03 / BOTTOM", "Circular bonded face • nominal Ø25.0 mm", bottom, 400, 755, 12.0),
-    ("04 / OPPOSED PAIR", f"Bonded faces facing • {BONDING_GAP:g} mm exploded gap for clarity", projected, 1200, 755, 11.0),
+    ("A", "SIDE", "Circular base, transition, and hex drive", side, 400, 280, 12.0),
+    ("B", "TOP", "Hex drive • 21 mm across flats", top, 1200, 280, 12.0),
+    ("C", "BOTTOM", "Bonding face • nominal Ø25 mm", bottom, 400, 800, 12.0),
+    ("D", "OPPOSED PAIR", f"Bonding faces • {BONDING_GAP:g} mm display gap", projected, 1200, 800, 11.0),
 ]
 parts = ['<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040">',
          '<rect width="1600" height="1040" fill="white"/>']
-for i, (title, subtitle, view, cx, cy, scale) in enumerate(panels):
+for i, (letter, title, subtitle, view, cx, cy, scale) in enumerate(panels):
     x0 = 50 if i % 2 == 0 else 820
     y0 = 30 if i < 2 else 530
     parts += [f'<rect x="{x0}" y="{y0}" width="730" height="460" rx="10" fill="none" stroke="#bdc6ce" stroke-width="1.5"/>',
-              f'<text x="{x0+26}" y="{y0+42}" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" fill="#17212b">{html.escape(title)}</text>',
-              f'<text x="{x0+26}" y="{y0+72}" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#4d5966">{html.escape(subtitle)}</text>',
+              f'<text x="{x0+26}" y="{y0+44}" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" font-style="italic" fill="#17212b">({letter})</text>',
+              f'<text x="{x0+82}" y="{y0+44}" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" fill="#17212b">{html.escape(title)}</text>',
+              f'<text x="{x0+26}" y="{y0+80}" font-family="Arial,Helvetica,sans-serif" font-size="21" fill="#4d5966">{html.escape(subtitle)}</text>',
               view_svg(view, cx, cy, scale)]
 parts.append('</svg>')
 SVG.write_text('\n'.join(parts))
