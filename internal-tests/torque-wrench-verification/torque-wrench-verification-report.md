@@ -40,13 +40,13 @@ The table below is a **preliminary transcription**. Entries marked **[to confirm
 | 2.0 kg | 19.62 N | 0.360 m | 7.0 N·m | 7.06 N·m | Readable |
 | 2.0 kg | 19.62 N | 0.160 m **[to confirm]** | approx. 3.2 N·m **[to confirm]** | 3.14 N·m | Handwriting difficult to read |
 | 4.2 kg | approx. 41.2 N | 0.305 m | 12.2 N·m | 12.57 N·m | Readable |
-| 4.2 kg | approx. 41.2 N | 0.360 m **[to confirm]** | 14.3 N·m | 14.83 N·m | Lever arm should be confirmed |
+| 4.2 kg | approx. 41.2 N | 0.360 m **[to confirm]** | **14.9 N·m** | **14.83 N·m** | Instrument reading is legible; lever arm should still be confirmed |
 
 The reference torques in the fifth column were recalculated independently from the stated masses and lever-arm values. They are included to help identify transcription errors while the handwritten values are being clarified.
 
 ## Initial observations
 
-The readable test points indicate that the wrench response was of the correct order of magnitude across the tested range. The two higher-torque points recorded with the 4.2 kg mass appear lower than the ideal calculated torque by several tenths of a newton-metre.
+The readable test points indicate that the wrench response was of the correct order of magnitude across the tested range. For the 4.2 kg mass, the clearly legible point at 0.305 m records 12.2 N·m versus a calculated 12.57 N·m, while the second legible instrument reading is 14.9 N·m versus approximately 14.83 N·m if the lever arm is confirmed as 0.360 m.
 
 No conclusion about compliance with the seller-stated ±1 % accuracy specification should be drawn from these preliminary values because:
 
@@ -68,7 +68,7 @@ A final error table and percentage deviation should be calculated only after all
 
 - [ ] Confirm the first reading with the 2.0 kg mass at approximately 0.300 m.
 - [ ] Confirm the third 2.0 kg test lever arm and instrument reading.
-- [ ] Confirm the second lever arm used with the 4.2 kg mass.
+- [ ] Confirm that the second lever arm used with the 4.2 kg mass was 0.360 m. The instrument reading itself is legible as 14.9 N·m.
 - [ ] Record the method used to measure the lever arm and its measurement resolution.
 - [x] Reference masses were weighed to ±1 g.
 - [ ] Record whether torque was applied in the clockwise or counterclockwise direction.
